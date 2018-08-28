@@ -1,6 +1,6 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
-import MenuToggle from '@/app/components/MenuToggle.vue';
+import MenuToggle from '@/app/components/menu/MenuToggle.vue';
 import store from '@/app/store';
 
 const localVue = createLocalVue();

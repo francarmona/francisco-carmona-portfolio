@@ -1,17 +1,12 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
-import VueRouter from 'vue-router';
 import sideNav from '@/app/store/modules/sideNav';
-import Menu from '@/app/components/Menu.vue';
+import Menu from '@/app/components/menu/Menu.vue';
 
 const localVue = createLocalVue();
 localVue.use(Vuex);
-localVue.use(VueRouter);
-
-const router = new VueRouter();
 
 describe('Menu', () => {
-
   let store;
 
   beforeEach(() => {
@@ -25,8 +20,7 @@ describe('Menu', () => {
   it('will open the Menu', () => {
     const wrapper = shallowMount(Menu, {
       localVue,
-      store,
-      router
+      store
     });
     store.state.sideNav.opened = true;
     expect(wrapper.vm.sideNavOpened).toBe(true);
@@ -36,8 +30,7 @@ describe('Menu', () => {
   it('will close the Menu', () => {
     const wrapper = shallowMount(Menu, {
       localVue,
-      store,
-      router
+      store
     });
     store.state.sideNav.opened = false;
     expect(wrapper.vm.sideNavOpened).toBe(false);

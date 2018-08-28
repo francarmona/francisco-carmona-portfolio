@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row" v-for="(event, index) in events">
+    <div class="row" v-for="(event) in events">
       <div class="col-md-12">
         <div class="row event" v-bind:class="[eventSelected == event ? 'active' : '', event.parity]">
           <article class="col-sm-12 col-md-3 event-header" v-bind:class="getHeaderClass(event)">

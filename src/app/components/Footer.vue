@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p class="text-center">Vue PWA Scaffold - Created by Francisco José Carmona</p>
+    <p class="text-center">Made with <span style="color: #e25555;">&hearts;</span> by Francisco José Carmona</p>
   </footer>
 </template>
 

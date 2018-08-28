@@ -1,7 +1,7 @@
 <template>
   <header>
-    <div class="container">
-      <div class="brand">Vue PWA Scaffold</div>
+    <div class="container header-wrapper">
+      <a href="/" class="brand">Asdf</a>
       <MenuToggle></MenuToggle>
       <Menu></Menu>
     </div>
@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import Menu from './Menu.vue';
-import MenuToggle from './MenuToggle.vue';
+import Menu from './menu/Menu.vue';
+import MenuToggle from './menu/MenuToggle.vue';
 export default {
   name: 'Header',
   components: {MenuToggle, Menu}
@@ -20,20 +20,33 @@ export default {
 <style lang="scss" scoped>
   @import '../scss/theme/variables.scss';
   @import '../scss/functions.scss';
-  .brand {
-    text-align: center;
-    padding: $padding-vertical-base 0 $padding-vertical-base 0;
-    letter-spacing: 0.8px;
-    color: color($colors, 'primary');
-    font-size: 1.4rem;
+
+  header {
+    padding: 0 2rem;
+    .header-wrapper {
+      text-align: center;
+      .brand {
+        line-height: 54px;
+        letter-spacing: 0.8px;
+        color: color($colors, 'primary');
+        font-size: 1.4rem;
+      }
+    }
   }
 
-  @media screen and (max-width: $md-breakpoint - 1) {
+  @media screen and (min-width: $md-breakpoint) {
     header {
-      height: $header-height;
-    }
-    .brand {
-      height: $header-height;
+      position: fixed;
+      width: 100%;
+      background-color: white;
+      z-index:99999;
+      .header-wrapper {
+        text-align: left;
+        height: $header-height;
+        .brand {
+          line-height: $header-height;
+        }
+      }
     }
   }
 </style>

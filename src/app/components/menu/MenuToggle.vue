@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../scss/theme/variables.scss';
+  @import '../../scss/theme/variables';
   .menu-toggle {
     display: none;
   }
