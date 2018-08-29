@@ -17,7 +17,7 @@ describe('Layout', () => {
     const wrapper = shallowMount(Layout, {
       localVue
     });
-    expect(wrapper.contains('main')).toBe(true);
+    expect(wrapper.contains('main-stub')).toBe(true);
   });
 
   it('renders a footer tag', () => {
