@@ -25,6 +25,7 @@ export default {
     padding: 0 2rem;
     .header-wrapper {
       text-align: center;
+      position: relative;
       .brand {
         line-height: 54px;
         letter-spacing: 0.8px;
