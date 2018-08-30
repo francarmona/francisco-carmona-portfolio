@@ -17,5 +17,5 @@ jobs:
       script:
         - gulp --env production build
       after_success:
-        - firebase deploy --token $FIREBASE_TOKEN
+        - firebase deploy --token $FIREBASE_TOKEN --project francisco-carmona-portfolio
 
