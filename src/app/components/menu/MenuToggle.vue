@@ -36,7 +36,7 @@ export default {
       transition: .35s ease-in-out;
       width: 25px;
       height:3px;
-      background-color:#444;
+      background-color: white;
       left: calc(#{$toggleSize} / 2 - 25px/2);
       &.line1 {
         top: calc(#{$toggleSize} / 2 - 5px);

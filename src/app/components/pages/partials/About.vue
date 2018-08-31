@@ -1,7 +1,8 @@
 <template>
-  <section id="about">
-    <h1>About me</h1>
+  <section id="about" class="container">
+    <h2>About me</h2>
     <div class="row">
+      <div class="col-sm-12"></div>
     </div>
   </section>
 </template>

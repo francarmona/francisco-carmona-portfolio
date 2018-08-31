@@ -1,7 +1,9 @@
 <template>
   <header>
     <div class="container header-wrapper">
-      <a href="/" class="brand">Asdf</a>
+      <a href="/" class="brand">
+        <img src="img/fc.png" alt="FC"></img>
+      </a>
       <MenuToggle></MenuToggle>
       <Menu></Menu>
     </div>
@@ -23,24 +25,26 @@ export default {
 
   header {
     padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+    z-index:99999;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
     .header-wrapper {
       text-align: center;
       position: relative;
       .brand {
         line-height: 54px;
-        letter-spacing: 0.8px;
-        color: color($colors, 'primary');
-        font-size: 1.4rem;
+        img {
+          max-width: 30px;
+          vertical-align: middle;
+        }
       }
     }
   }
 
   @media screen and (min-width: $md-breakpoint) {
     header {
-      position: fixed;
-      width: 100%;
-      background-color: white;
-      z-index:99999;
       .header-wrapper {
         text-align: left;
         height: $header-height;

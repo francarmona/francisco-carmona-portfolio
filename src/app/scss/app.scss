@@ -49,17 +49,14 @@ header {
   box-shadow: 0 0 1px rgba(0,0,0,0.25);
 }
 
-main {
-  padding: 0 2rem;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  section {
-    h1 {
-      text-align: center;
-    }
+}
+
+section {
+  h2 {
+    text-align: center;
   }
 }
 

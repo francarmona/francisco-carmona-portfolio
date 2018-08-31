@@ -2,7 +2,7 @@
   <nav role="navigation" v-bind:class="{ open: sideNavOpened }">
     <ul class="nav-bar">
       <li v-for="item in this.items">
-        <a v-bind:href="item.url">{{ item.name }}</a>
+        <a v-on:click.stop="setActive(item);toggleSideNav()" v-scroll-to="{el:item.url, offset:-95}" class="nav-link" v-bind:class="{ active: activeLink == item }">{{ item.name }}</a>
       </li>
     </ul>
   </nav>
@@ -10,12 +10,16 @@
 
 <script>
 
-import { mapGetters } from 'vuex';
+import { mapGetters, mapMutations } from 'vuex';
 export default {
   name: 'Menu',
   data: () => {
     return {
       items: [
+        {
+          url: '#home',
+          name: 'Home'
+        },
         {
           url: '#about',
           name: 'About me'
@@ -26,19 +30,29 @@ export default {
         },
         {
           url: '#contact',
-          name: 'Contact'
-        },
-        {
-          url: '#social',
-          name: 'Social'
+          name: 'Contact me'
         }
       ]
     }
   },
+  methods: {
+    ...mapMutations('navigation', {
+      setActive: 'setActive'
+    }),
+    ...mapMutations('sideNav', {
+      toggleSideNav: 'toggleSideNav'
+    })
+  },
   computed: {
     ...mapGetters('sideNav', {
       sideNavOpened: 'sideNavOpened'
+    }),
+    ...mapGetters('navigation', {
+      activeLink: 'activeLink'
     })
+  },
+  created() {
+    this.setActive(this.items[0]);
   }
 }
 </script>
@@ -58,13 +72,12 @@ export default {
         display: inline-block;
         padding: 0 2.5rem 0;
         text-align: center;
-        &.router-link-exact-active {
-          a {
+        .nav-link {
+          color: white;
+          cursor: pointer;
+          &.active {
             color: color($colors, 'primary');
           }
-        }
-        a {
-          cursor: pointer;
         }
       }
     }

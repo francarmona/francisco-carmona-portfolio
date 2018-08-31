@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import store from './store';
 import VueMq from 'vue-mq';
+import VueScrollTo from 'vue-scrollto';
 
 Vue.use(VueMq, {
   breakpoints: {
@@ -10,6 +11,8 @@ Vue.use(VueMq, {
     lg: Infinity,
   }
 });
+
+Vue.use(VueScrollTo);
 
 new Vue({
   el: '#app',
