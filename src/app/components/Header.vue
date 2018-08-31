@@ -29,7 +29,7 @@ export default {
     width: 100%;
     z-index:99999;
     top: 0;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 1);
     .header-wrapper {
       text-align: center;
       position: relative;
@@ -45,6 +45,7 @@ export default {
 
   @media screen and (min-width: $md-breakpoint) {
     header {
+      background-color: rgba(0, 0, 0, .8);
       .header-wrapper {
         text-align: left;
         height: $header-height;

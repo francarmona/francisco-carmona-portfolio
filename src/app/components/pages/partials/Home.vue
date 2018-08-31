@@ -17,7 +17,7 @@ export default {
   @import '../../../scss/theme/variables';
   #home {
     position: relative;
-    height: 400px;
+    height: 330px;
     background-image: url('img/home-background1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,10 +28,10 @@ export default {
       top: 50%;
       transform: translateY(-95%);
       .title {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: white;
         text-align: center;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         span {
           font-weight: 100;
         }
@@ -39,7 +39,7 @@ export default {
       .subtitle {
         color: white;
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: 100;
         letter-spacing: 1px;
       }
