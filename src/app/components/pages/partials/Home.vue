@@ -31,7 +31,18 @@
                 <li></li>
               </ul>
             </div>
-            <div class="content"></div>
+            <div class="content">
+              <div>
+                FranC:portfolio fcarmona$ npm run test
+              </div>
+              <div>
+                > jest
+              </div>
+              <div class="hidden-sm">
+                <b>Test Suites:</b> <span class="green">8 passed</span>, 8 total
+                <br><b>Tests:</b> <span class="green">14 passed</span> 14 total
+              </div>
+            </div>
           </div>
         </article>
       </article>
@@ -41,7 +52,16 @@
         </article>
         <article class="col-md-6 col-md-pull-6">
           <div class="phone centered">
-            <div class="content"></div>
+            <div class="content text-center">
+              <div class="content-wrapper">
+                <i class="material-icons">
+                  signal_wifi_off
+                </i>
+                <div class="title">PWA</div>
+                <img src="img/lighthouse.png" alt="lighthouse pwa">
+                <div class="subtitle">Score 90+/100</div>
+              </div>
+            </div>
           </div>
         </article>
       </article>
@@ -61,7 +81,7 @@ export default {
     article {
       h2 {
         font-weight: normal;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
       &.top-marged {
         margin-top: 2.5rem;
@@ -97,6 +117,22 @@ export default {
         }
       }
     }
+    .phone {
+      .content {
+        .content-wrapper {
+          padding: 4px;
+        }
+      }
+      .title {
+        font-weight: bold;
+      }
+      .subtitle {
+        font-size: .75rem;
+      }
+      img {
+        max-width: 60px;
+      }
+    }
   }
 
   @media screen and (min-width: $md-breakpoint) {
@@ -118,6 +154,22 @@ export default {
           .subtitle {
             font-size: 1.5rem;
           }
+        }
+      }
+      .phone {
+        .content {
+          .content-wrapper {
+            padding-top: 2rem;
+          }
+        }
+        .title {
+          padding: 10px;
+        }
+        .subtitle {
+          font-size: .8rem;
+        }
+        img {
+          max-width: 80px;
         }
       }
     }

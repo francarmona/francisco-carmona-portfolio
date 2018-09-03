@@ -2,7 +2,7 @@
   position: relative;
   width: device($devices, 'screen-width-sm');
   height: device($devices, 'height-sm');
-  border: 14px solid #ececec;
+  border: 9px solid #ececec;
   border-radius: 10px;
   &:before {
     content: "";
@@ -11,19 +11,19 @@
     width: 4px;
     height: 4px;
     border-radius: 4px;
-    top: -9px;
+    top: -6px;
     left: 50%;
   }
   .content {
-    height: calc(#{device($devices, 'height-sm')} - 14px*2);
+    height: calc(#{device($devices, 'height-sm')} - 9px*2);
     background: color($colors, 'primary');
   }
   .base {
     position: absolute;
     width: calc(#{device($devices, 'screen-width-sm')} + 50px);
-    height: 10px;
-    bottom: -15px;
-    left: calc(-14px - (50px)/2);
+    height: 8px;
+    bottom: -12px;
+    left: calc(-9px - (50px)/2);
     border: 1px solid #ececec;
     border-radius: 0 0 20px 20px;
     background: #f4f5f7;
@@ -76,10 +76,14 @@
     }
   }
   .content {
+    padding: 5px;
     height: calc(#{device($devices, 'height-sm')} - 20px);
-    background: gray;
+    background: #272727;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    color:white;
+    font-size: 0.9rem;
+    letter-spacing: .6px;
   }
 }
 
@@ -87,24 +91,24 @@
   position: relative;
   height: device($devices, 'height-sm');
   width: device($devices, 'phone-width-sm');
-  border-top: 15px solid #ececec;
-  border-left: 6px solid #ececec;
-  border-right: 6px solid #ececec;
-  border-bottom: 15px solid #ececec;
-  border-radius: 10px;
+  border-top: 12px solid #ececec;
+  border-left: 5px solid #ececec;
+  border-right: 5px solid #ececec;
+  border-bottom: 12px solid #ececec;
+  border-radius: 8px;
   background: #ececec;
   &:before {
     content: "";
     position: absolute;
-    width: 20px;
-    height: 3px;
-    border-radius: 25px;
+    width: 18px;
+    height: 2px;
+    border-radius: 10px;
     left: calc(50% - 10px);
-    top: calc(-15px/2);
+    top: calc(-12px/2);
     background: #a5adbd;
   }
   .content {
-    height: calc(#{device($devices, 'height-sm')} - 15px*2);
+    height: calc(#{device($devices, 'height-sm')} - 12px*2);
     background: color($colors, 'secondary');
     border-radius: 5px;
   }
@@ -113,7 +117,11 @@
 @media screen and (min-width: $md-breakpoint) {
   .laptop {
     width: device($devices, 'screen-width-lg');
+    border: 14px solid #ececec;
     height: device($devices, 'height-lg');
+    &:before {
+      top: -9px;
+    }
     .content {
       height: calc(#{device($devices, 'height-lg')} - 14px*2);
       &:before {
@@ -128,6 +136,9 @@
     }
     .base {
       width: calc(#{device($devices, 'screen-width-lg')} + 50px);
+      height: 10px;
+      bottom: -14px;
+      left: calc(-14px - (50px)/2);
     }
   }
 
@@ -151,6 +162,22 @@
   .phone {
     height: device($devices, 'height-lg');
     width: device($devices, 'phone-width-lg');
+    border-top: 15px solid #ececec;
+    border-left: 6px solid #ececec;
+    border-right: 6px solid #ececec;
+    border-bottom: 15px solid #ececec;
+    border-radius: 10px;
+    background: #ececec;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 3px;
+      border-radius: 25px;
+      left: calc(50% - 10px);
+      top: calc(-15px/2);
+      background: #a5adbd;
+    }
     .content {
       height: calc(#{device($devices, 'height-lg')} - 15px*2);
       &:before {
