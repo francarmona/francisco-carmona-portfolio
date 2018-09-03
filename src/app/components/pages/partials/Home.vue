@@ -120,17 +120,21 @@ export default {
     .phone {
       .content {
         .content-wrapper {
-          padding: 4px;
+          padding: 9px;
+          i {
+            font-size: 1.1rem;
+          }
+          .title {
+            font-size: .9rem;
+            font-weight: bold;
+          }
+          .subtitle {
+            font-size: .7rem;
+          }
+          img {
+            max-width: 60px;
+          }
         }
-      }
-      .title {
-        font-weight: bold;
-      }
-      .subtitle {
-        font-size: .75rem;
-      }
-      img {
-        max-width: 60px;
       }
     }
   }
@@ -160,16 +164,20 @@ export default {
         .content {
           .content-wrapper {
             padding-top: 2rem;
+            i {
+              font-size: 1.5rem;
+            }
+            .title {
+              padding: 10px;
+              font-size: 1rem;
+            }
+            .subtitle {
+              font-size: .8rem;
+            }
+            img {
+              max-width: 80px;
+            }
           }
-        }
-        .title {
-          padding: 10px;
-        }
-        .subtitle {
-          font-size: .8rem;
-        }
-        img {
-          max-width: 80px;
         }
       }
     }
