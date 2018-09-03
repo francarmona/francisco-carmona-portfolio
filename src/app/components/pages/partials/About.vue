@@ -1,6 +1,6 @@
 <template>
   <section id="about" class="container">
-    <h2>About me</h2>
+    <h1>About me</h1>
     <div class="row">
       <div class="col-sm-12"></div>
     </div>

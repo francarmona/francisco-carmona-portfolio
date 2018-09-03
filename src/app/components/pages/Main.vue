@@ -24,4 +24,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  main {
+    &>section {
+      padding-bottom: 5rem;
+    }
+  }
 </style>

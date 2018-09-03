@@ -2,3 +2,7 @@
 @function color($map, $color-name) {
   @return map-get($map, $color-name);
 }
+
+@function device($map, $device-screen) {
+  @return map-get($map, $device-screen);
+}

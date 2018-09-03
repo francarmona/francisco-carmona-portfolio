@@ -7,7 +7,7 @@ $sm-breakpoint: 549px;
 $md-breakpoint: 800px;
 $lg-breakpoint: 1000px;
 
-//Typography
+// Typography
 $font-family: 'Montserrat', sans-seriff;
 $font-size-base: 16px;
 
@@ -17,7 +17,7 @@ $padding-vertical-base: 10px;
 
 $header-height: 95px;
 
-//Colors
+// Colors
 $colors: (
   primary:    #16bac5,
   secondary:  #63c7b2,
@@ -27,4 +27,14 @@ $colors: (
   success:    #5cd65c,
   error:      #ff6666,
   info:       #66ccff
+);
+
+// Devices screens
+$devices: (
+  height-sm: 130px,
+  screen-width-sm: 200px,
+  phone-width-sm: 70px,
+  height-lg: 260px,
+  screen-width-lg: 400px,
+  phone-width-lg: 135px
 );

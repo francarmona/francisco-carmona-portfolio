@@ -1,0 +1,167 @@
+.laptop {
+  position: relative;
+  width: device($devices, 'screen-width-sm');
+  height: device($devices, 'height-sm');
+  border: 14px solid #ececec;
+  border-radius: 10px;
+  &:before {
+    content: "";
+    position: absolute;
+    background: #a5adbd;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    top: -9px;
+    left: 50%;
+  }
+  .content {
+    height: calc(#{device($devices, 'height-sm')} - 14px*2);
+    background: color($colors, 'primary');
+  }
+  .base {
+    position: absolute;
+    width: calc(#{device($devices, 'screen-width-sm')} + 50px);
+    height: 10px;
+    bottom: -15px;
+    left: calc(-14px - (50px)/2);
+    border: 1px solid #ececec;
+    border-radius: 0 0 20px 20px;
+    background: #f4f5f7;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 3px;
+      left: 50%;
+      top: 0;
+      margin-left: -21px;
+      border-radius: 0 0 5px 5px;
+      background: #d8dbe1;
+    }
+  }
+}
+
+.terminal {
+  position: relative;
+  border-top: 20px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  width: device($devices, 'screen-width-sm');
+  height: device($devices, 'height-sm');
+  border-radius: 5px;
+  .buttons {
+    position: absolute;
+    top: -24px;
+    left: 8px;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        &:nth-child(1) {
+          background: #fc5254;
+        }
+        &:nth-child(2) {
+          background: #fcae52;
+        }
+        &:nth-child(3) {
+          background: #66b34e;
+        }
+      }
+    }
+  }
+  .content {
+    height: calc(#{device($devices, 'height-sm')} - 20px);
+    background: gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.phone {
+  position: relative;
+  height: device($devices, 'height-sm');
+  width: device($devices, 'phone-width-sm');
+  border-top: 15px solid #ececec;
+  border-left: 6px solid #ececec;
+  border-right: 6px solid #ececec;
+  border-bottom: 15px solid #ececec;
+  border-radius: 10px;
+  background: #ececec;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    border-radius: 25px;
+    left: calc(50% - 10px);
+    top: calc(-15px/2);
+    background: #a5adbd;
+  }
+  .content {
+    height: calc(#{device($devices, 'height-sm')} - 15px*2);
+    background: color($colors, 'secondary');
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: $md-breakpoint) {
+  .laptop {
+    width: device($devices, 'screen-width-lg');
+    height: device($devices, 'height-lg');
+    .content {
+      height: calc(#{device($devices, 'height-lg')} - 14px*2);
+      &:before {
+        content: "";
+        position: absolute;
+        right: -90px;
+        width: device($devices, 'height-lg');
+        height: device($devices, 'screen-width-lg');
+        transform: rotate(30deg);
+        background: linear-gradient(to bottom, rgba(255,255,255,0.16) 0%,rgba(255,255,255,0) 100%);
+      }
+    }
+    .base {
+      width: calc(#{device($devices, 'screen-width-lg')} + 50px);
+    }
+  }
+
+  .terminal {
+    width: device($devices, 'screen-width-lg');
+    height: device($devices, 'height-lg');
+    .content {
+      height: calc(#{device($devices, 'height-lg')} - 20px);
+      &:before {
+        content: "";
+        position: absolute;
+        right: -90px;
+        width: device($devices, 'height-lg');
+        height: device($devices, 'screen-width-lg');
+        transform: rotate(30deg);
+        background: linear-gradient(to bottom, rgba(255,255,255,0.16) 0%,rgba(255,255,255,0) 100%);
+      }
+    }
+  }
+
+  .phone {
+    height: device($devices, 'height-lg');
+    width: device($devices, 'phone-width-lg');
+    .content {
+      height: calc(#{device($devices, 'height-lg')} - 15px*2);
+      &:before {
+        content: "";
+        position: absolute;
+        right: -90px;
+        width: 200px;
+        height: 200px;
+        transform: rotate(30deg);
+        background: linear-gradient(to bottom, rgba(255,255,255,0.16) 0%,rgba(255,255,255,0) 100%);
+      }
+    }
+  }
+}

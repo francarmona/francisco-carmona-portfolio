@@ -1,6 +1,6 @@
 <template>
   <section id="contact" class="container">
-    <h2>Contact</h2>
+    <h1>Contact</h1>
     <div class="row">
       <div class="col-md-2 col-md-push-3 text-center">
         <a target="_blank" title="Github - Francisco Carmona" href="https://github.com/francarmona">
@@ -34,7 +34,7 @@ export default {
 <style lang="scss" scoped>
   #contact {
     img {
-      width: 100px;
+      width: 70px;
       height: auto;
     }
   }

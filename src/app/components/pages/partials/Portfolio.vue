@@ -1,6 +1,6 @@
 <template>
   <section id="portfolio" class="container">
-    <h2>Portfolio</h2>
+    <h1>Portfolio</h1>
     <Timeline v-bind:groups="groups"></Timeline>
   </section>
 </template>
