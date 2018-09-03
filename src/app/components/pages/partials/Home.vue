@@ -8,14 +8,14 @@
     </div>
     <div class="container">
       <article class="row top-marged">
-        <article class="col-md-6">
+        <article class="col-md-6 col-md-push-6 text-center">
+          <h2>Hello visitors! Welcome to my website</h2>
+        </article>
+        <article class="col-md-6 col-md-pull-6">
           <div class="laptop centered">
             <div class="content"></div>
             <div class="base"></div>
           </div>
-        </article>
-        <article class="col-md-6 text-center">
-          <h2>Hello visitors! Welcome to my website</h2>
         </article>
       </article>
       <article class="row top-marged">
@@ -36,13 +36,13 @@
         </article>
       </article>
       <article class="row top-marged">
-        <article class="col-md-6">
+        <article class="col-md-6 col-md-push-6 text-center">
+          <h2>Did you notice? This website works offline. Switch off the internet connection and let's try it!</h2>
+        </article>
+        <article class="col-md-6 col-md-pull-6">
           <div class="phone centered">
             <div class="content"></div>
           </div>
-        </article>
-        <article class="col-md-6 text-center">
-          <h2>Did you notice? This website works offline. Switch off the internet connection and let's try it!</h2>
         </article>
       </article>
     </div>
@@ -62,7 +62,6 @@ export default {
       h2 {
         font-weight: normal;
         font-size: 1.5rem;
-        margin-bottom: 0;
       }
       &.top-marged {
         margin-top: 2.5rem;
