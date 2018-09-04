@@ -17,6 +17,12 @@
   .content {
     height: calc(#{device($devices, 'height-sm')} - 9px*2);
     background: color($colors, 'primary');
+    i {
+      font-size: 4rem;
+      left: calc(50% - 4rem/2);
+      top: calc(50% - 4rem/2);
+      position: absolute;
+    }
   }
   .base {
     position: absolute;
@@ -82,7 +88,7 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color:white;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     letter-spacing: .6px;
   }
 }
@@ -147,6 +153,7 @@
     height: device($devices, 'height-lg');
     .content {
       height: calc(#{device($devices, 'height-lg')} - 20px);
+      font-size: 0.9rem;
       &:before {
         content: "";
         position: absolute;

@@ -13,7 +13,11 @@
         </article>
         <article class="col-md-6 col-md-pull-6">
           <div class="laptop centered">
-            <div class="content"></div>
+            <div class="content">
+              <i class="material-icons">
+                fingerprint
+              </i>
+            </div>
             <div class="base"></div>
           </div>
         </article>
@@ -54,13 +58,31 @@
           <div class="phone centered">
             <div class="content text-center">
               <div class="content-wrapper">
-                <i class="material-icons">
-                  signal_wifi_off
-                </i>
+                <img src="img/wifi-off.svg" class="icon" alt="wifi off">
                 <div class="title">PWA</div>
                 <img src="img/lighthouse.png" alt="lighthouse pwa">
                 <div class="subtitle">Score 90+/100</div>
               </div>
+            </div>
+          </div>
+        </article>
+      </article>
+      <article class="row top-marged">
+        <article class="col-md-6 text-center lets-dive">
+          <h2>Let's dive into my coding experience</h2>
+          <button class="btn btn-danger">Go!</button>
+        </article>
+        <article class="col-md-6">
+          <div class="terminal centered">
+            <div class="buttons">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="content lets-go">
+              <img src="img/rocket.svg" alt="rocket">
             </div>
           </div>
         </article>
@@ -85,6 +107,9 @@ export default {
       }
       &.top-marged {
         margin-top: 2.5rem;
+      }
+      .lets-dive {
+        padding-bottom: 1.3rem;
       }
     }
     .home-background {
@@ -117,22 +142,34 @@ export default {
         }
       }
     }
+    .terminal {
+      .content {
+        &.lets-go {
+          background: #9e7dd8;
+          img {
+            width: 4rem;
+            left: calc(50% - 4rem/2);
+            top: calc(50% - 4rem/2);
+            position: absolute;
+          }
+        }
+      }
+    }
     .phone {
       .content {
         .content-wrapper {
           padding: 9px;
-          i {
-            font-size: 1.1rem;
+          img {
+            width: 50px;
+            &.icon {
+              width: 1.5rem;
+            }
           }
           .title {
-            font-size: .9rem;
-            font-weight: bold;
+            font-size: .75rem;
           }
           .subtitle {
-            font-size: .7rem;
-          }
-          img {
-            max-width: 60px;
+            font-size: .63rem;
           }
         }
       }
@@ -164,8 +201,11 @@ export default {
         .content {
           .content-wrapper {
             padding-top: 2rem;
-            i {
-              font-size: 1.5rem;
+            img {
+              width: 55px;
+              &.icon {
+                width: 2rem;
+              }
             }
             .title {
               padding: 10px;
@@ -173,9 +213,6 @@ export default {
             }
             .subtitle {
               font-size: .8rem;
-            }
-            img {
-              max-width: 80px;
             }
           }
         }

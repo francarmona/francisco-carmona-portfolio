@@ -30,6 +30,21 @@ body {
   line-height: $line-height-base;
 }
 
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
 #app {
   min-height: 100%;
   padding-bottom: $footer-height + 30px;
@@ -85,6 +100,31 @@ section {
 
 .green {
   color: green;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  @each $color, $value in $colors {
+    &.btn-#{$color} {
+      color: #fff;
+      background-color: $value;
+      border-color: $value;
+      &:hover {
+        background-color: darken($value, 15%);
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: $md-breakpoint - 1) {

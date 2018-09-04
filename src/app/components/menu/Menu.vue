@@ -1,44 +1,25 @@
 <template>
-  <nav role="navigation" v-bind:class="{ open: sideNavOpened }">
-    <ul class="nav-bar">
-      <li v-for="item in this.items">
-        <a v-on:click.stop="setActive(item);toggleSideNav()" v-scroll-to="{el:item.url, offset:-95}" class="nav-link" v-bind:class="{ active: activeLink == item }">{{ item.name }}</a>
-      </li>
-    </ul>
-  </nav>
+    <scrollactive active-class="active" :offset="120" role="navigation" v-bind:class="{ open: sideNavOpened }">
+      <ul class="nav-bar">
+        <li v-for="item in this.items">
+          <a v-on:click.stop="toggleSideNav()" v-bind:href="item.url" class="nav-link scrollactive-item">{{ item.name }}</a>
+        </li>
+      </ul>
+    </scrollactive>
 </template>
 
 <script>
-
 import { mapGetters, mapMutations } from 'vuex';
+import { menuItems } from "./data";
+
 export default {
   name: 'Menu',
   data: () => {
     return {
-      items: [
-        {
-          url: '#home',
-          name: 'Home'
-        },
-        {
-          url: '#about',
-          name: 'About me'
-        },
-        {
-          url: '#portfolio',
-          name: 'Portfolio'
-        },
-        {
-          url: '#contact',
-          name: 'Contact me'
-        }
-      ]
+      items: menuItems
     }
   },
   methods: {
-    ...mapMutations('navigation', {
-      setActive: 'setActive'
-    }),
     ...mapMutations('sideNav', {
       toggleSideNav: 'toggleSideNav'
     })
@@ -46,13 +27,7 @@ export default {
   computed: {
     ...mapGetters('sideNav', {
       sideNavOpened: 'sideNavOpened'
-    }),
-    ...mapGetters('navigation', {
-      activeLink: 'activeLink'
     })
-  },
-  created() {
-    this.setActive(this.items[0]);
   }
 }
 </script>

@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import App from './App.vue';
 import store from './store';
+import VueSCrollactive from 'vue-scrollactive';
 import VueMq from 'vue-mq';
-import VueScrollTo from 'vue-scrollto';
 
 Vue.use(VueMq, {
   breakpoints: {
@@ -12,7 +12,7 @@ Vue.use(VueMq, {
   }
 });
 
-Vue.use(VueScrollTo);
+Vue.use(VueSCrollactive);
 
 new Vue({
   el: '#app',
