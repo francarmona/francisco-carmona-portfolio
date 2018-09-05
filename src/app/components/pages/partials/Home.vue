@@ -52,7 +52,7 @@
       </article>
       <article class="row top-marged">
         <article class="col-md-6 col-md-push-6 text-center">
-          <h2>Did you notice? This website works offline. Switch off the internet connection and let's try it!</h2>
+          <h2>Did you notice? This website works offline. Switch off the internet connection and check it!</h2>
         </article>
         <article class="col-md-6 col-md-pull-6">
           <div class="phone centered">
@@ -70,7 +70,7 @@
       <article class="row top-marged">
         <article class="col-md-6 text-center lets-dive">
           <h2>Let's dive into my coding experience</h2>
-          <button class="btn btn-danger">Go!</button>
+          <button class="btn btn-danger" v-click-selector="'nav .nav-bar li>a[data-menu-item=about]'">Let's go!</button>
         </article>
         <article class="col-md-6">
           <div class="terminal centered">
@@ -93,7 +93,12 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  methods: {
+    goToMenuItem(id) {
+      document.querySelector('nav .nav-bar li>a[data-menu-item="' + id + '"]').click();
+    }
+  }
 }
 </script>
 

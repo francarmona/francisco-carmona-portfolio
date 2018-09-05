@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
 import store from './store';
+import ClickSelectorDirective from './directives/ClickSelectorDirective';
 import VueScrollActive from 'vue-scrollactive';
 import VueMq from 'vue-mq';
 
@@ -13,6 +14,8 @@ Vue.use(VueMq, {
 });
 
 Vue.use(VueScrollActive);
+
+Vue.directive('click-selector', ClickSelectorDirective);
 
 new Vue({
   el: '#app',
