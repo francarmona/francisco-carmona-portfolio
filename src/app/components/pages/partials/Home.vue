@@ -119,8 +119,8 @@ export default {
     }
     .home-background {
       position: relative;
-      height: 330px;
-      background-image: url('img/home-background1.jpg');
+      height: 300px;
+      background-image: url('img/home-background.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -128,7 +128,7 @@ export default {
         position: absolute;
         width: 100%;
         top: 50%;
-        transform: translateY(-95%);
+        transform: translateY(-50%);
         .title {
           font-size: 1.5rem;
           color: white;
@@ -192,7 +192,7 @@ export default {
         }
       }
       .home-background {
-        height: 800px;
+        height: 600px;
         .home-wrapper {
           .title {
             font-size: 3rem;
