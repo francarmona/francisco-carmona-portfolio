@@ -11,13 +11,9 @@
 <script>
 import { mapGetters, mapMutations } from 'vuex';
 import { menuItems } from "./data";
-import scrollactive from 'vue-scrollactive';
 
 export default {
   name: 'Menu',
-  components: {
-    scrollactive
-  },
   data: () => {
     return {
       items: menuItems

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
 import store from './store';
-import VueSCrollactive from 'vue-scrollactive';
+import VueScrollActive from 'vue-scrollactive';
 import VueMq from 'vue-mq';
 
 Vue.use(VueMq, {
@@ -12,7 +12,7 @@ Vue.use(VueMq, {
   }
 });
 
-Vue.use(VueSCrollactive);
+Vue.use(VueScrollActive);
 
 new Vue({
   el: '#app',

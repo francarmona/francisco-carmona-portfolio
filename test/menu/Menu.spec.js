@@ -1,5 +1,6 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
+import scrollactive from 'vue-scrollactive';
 import sideNav from '@/app/store/modules/sideNav';
 import Menu from '@/app/components/menu/Menu.vue';
 
@@ -8,6 +9,10 @@ localVue.use(Vuex);
 
 describe('Menu', () => {
   let store;
+
+  Menu.components = {
+    scrollactive
+  };
 
   beforeEach(() => {
     store = new Vuex.Store({
