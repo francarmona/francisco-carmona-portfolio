@@ -2,7 +2,7 @@
   <header>
     <div class="container header-wrapper">
       <a href="/" class="brand">
-        <img src="img/fc.png" alt="FC"></img>
+        <img src="img/fc1.png" alt="FC"></img>
       </a>
       <MenuToggle></MenuToggle>
       <Menu></Menu>

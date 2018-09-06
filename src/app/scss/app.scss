@@ -1,7 +1,6 @@
 
-$material-design-icons-font-path: '../fonts/';
-@import '../../../node_modules/material-design-icons-iconfont/dist/material-design-icons.scss';
 @import 'theme/variables';
+@import '../../../node_modules/material-design-icons-iconfont/dist/material-design-icons.scss';
 @import 'functions';
 @import 'partials/devices';
 @import 'partials/grid';
@@ -22,6 +21,7 @@ html {
 
 body {
   min-height: 100%;
+  overflow-x: hidden;
   font-family: $font-family;
   background-color: $body-bg;
   margin: 0;
@@ -67,7 +67,7 @@ header {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: $container-width;
   margin: 0 auto;
 }
 
@@ -130,7 +130,7 @@ section {
   }
 }
 
-@media screen and (max-width: $md-breakpoint - 1) {
+@media screen and (max-width: $container-width) {
   .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;

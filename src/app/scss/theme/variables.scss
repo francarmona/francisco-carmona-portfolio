@@ -1,6 +1,7 @@
 $body-bg: #fdfdfd;
 $text-color: #333;
-
+$container-width: 1200px;
+$header-height: 95px;
 $footer-height: 100px;
 
 $sm-breakpoint: 549px;
@@ -11,11 +12,11 @@ $lg-breakpoint: 1000px;
 $font-family: 'Montserrat', sans-seriff;
 $font-size-base: 16px;
 
+$material-design-icons-font-path: '../fonts/';
+
 $line-height-base: 1.5;
 $padding-horizontal-base: 10px;
 $padding-vertical-base: 10px;
-
-$header-height: 95px;
 
 // Colors
 $colors: (

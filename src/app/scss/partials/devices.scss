@@ -133,10 +133,11 @@
       &:before {
         content: "";
         position: absolute;
-        right: -90px;
+        top: -25px;
+        right: -70px;
         width: device($devices, 'height-lg');
         height: device($devices, 'screen-width-lg');
-        transform: rotate(30deg);
+        transform: rotate(25deg);
         background: linear-gradient(to bottom, rgba(255,255,255,0.16) 0%,rgba(255,255,255,0) 100%);
       }
     }
@@ -157,10 +158,11 @@
       &:before {
         content: "";
         position: absolute;
-        right: -90px;
+        top: -25px;
+        right: -70px;
         width: device($devices, 'height-lg');
         height: device($devices, 'screen-width-lg');
-        transform: rotate(30deg);
+        transform: rotate(25deg);
         background: linear-gradient(to bottom, rgba(255,255,255,0.16) 0%,rgba(255,255,255,0) 100%);
       }
     }

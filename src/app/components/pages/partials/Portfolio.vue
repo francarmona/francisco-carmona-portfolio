@@ -17,7 +17,7 @@ export default {
   data: () => {
     return {
       groups: [
-        {groupTitle: 'Currently', events: [
+        {groupTitle: 'Currently<div>Happily working on asdfsdfER</div>', events: [
             {id: 1, title:'AngularJs', subtitle: 'Superheroic JavaScript MVW Framework', body: `
         <p>
           HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications.

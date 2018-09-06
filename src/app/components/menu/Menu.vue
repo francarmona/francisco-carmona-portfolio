@@ -1,5 +1,5 @@
 <template>
-    <scrollactive active-class="active" :offset="120" role="navigation" v-bind:class="{ open: sideNavOpened }">
+    <scrollactive active-class="active" :offset="110" role="navigation" v-bind:class="{ open: sideNavOpened }">
       <ul class="nav-bar">
         <li v-for="item in this.items">
           <a v-on:click.stop="toggleSideNav()" v-bind:href="item.url" v-bind:data-menu-item="item.id" class="nav-link scrollactive-item">{{ item.name }}</a>

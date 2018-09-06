@@ -24,9 +24,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../scss/theme/variables';
   main {
     &>section {
-      padding-bottom: 5rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  @media screen and (min-width: $md-breakpoint){
+    main {
+      &>section {
+        padding-bottom: 5rem;
+      }
     }
   }
 </style>

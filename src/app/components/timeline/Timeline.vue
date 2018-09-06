@@ -3,8 +3,8 @@
     <div class="time-line-bar"></div>
     <div v-for="(group, index) in groupsProcessed" class="row group">
       <div class="col-sm-12">
-        <div class="col-sm-12 events-group" v-bind:style="{ padding: index === 0 ? '0 0 2.5rem 0' : ''}">
-          <span>{{ group.groupTitle }}</span>
+        <div class="col-sm-12 events-group" v-bind:style="{ padding: index === 0 ? '0 0 2.5rem 0' : '' }">
+          <div v-html="group.groupTitle"></div>
         </div>
         <TimelineEvents v-bind:events="group.events"></TimelineEvents>
       </div>
@@ -59,7 +59,7 @@ export default {
     }
 
     .events-group {
-      > span {
+      > div {
         background-color: white;
         padding: 5px;
       }

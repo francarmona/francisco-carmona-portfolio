@@ -42,7 +42,7 @@
               <div>
                 > jest
               </div>
-              <div class="hidden-sm">
+              <div class="small-terminal-text">
                 <b>Test Suites:</b> <span class="green">8 passed</span>, 8 total
                 <br><b>Tests:</b> <span class="green">14 passed</span> 14 total
               </div>
@@ -52,7 +52,7 @@
       </article>
       <article class="row top-marged">
         <article class="col-md-6 col-md-push-6 text-center">
-          <h2>Did you notice? This website works offline. Switch off the internet connection and check it!</h2>
+          <h2>Did you notice? This website works offline. Switch off the internet connection and try it!</h2>
         </article>
         <article class="col-md-6 col-md-pull-6">
           <div class="phone centered">
@@ -158,6 +158,9 @@ export default {
             position: absolute;
           }
         }
+        .small-terminal-text {
+          font-size: .77rem;
+        }
       }
     }
     .phone {
@@ -199,6 +202,13 @@ export default {
           }
           .subtitle {
             font-size: 1.5rem;
+          }
+        }
+      }
+      .terminal {
+        .content {
+          .small-terminal-text {
+            font-size: .81rem;
           }
         }
       }

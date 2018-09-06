@@ -1,10 +1,10 @@
 {
   "name": "Francisco Carmona Portfolio",
-  "short_name": "FC",
+  "short_name": "F. Carmona",
   "description": "",
   "display": "standalone",
   "background_color": "#f3f3f3",
-  "theme_color": "#16bac5",
+  "theme_color": "#6d6d6d",
   "start_url": "/",
   "scope": "/",
   "icons": [
