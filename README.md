@@ -1,17 +1,17 @@
 <p align="center">
-<img src="https://github.com/francarmona/vue-pwa-es6-gulp-scaffold/blob/master/src/assets/img/vue-pwa-scaffold-banner.png" alt="vue pwa scaffold banner" />
+<img src="https://github.com/francarmona/francisco-carmona-portfolio/blob/master/src/assets/img/francisco-carmona-portfolio-banner.jpg" alt="Francisco Carmona" />
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/francarmona/vue-pwa-es6-gulp-scaffold"><img alt="Build Status" src="https://travis-ci.org/francarmona/vue-pwa-es6-gulp-scaffold.svg?branch=master"></a>
+  <a href="https://travis-ci.org/francarmona/francisco-carmona-portfolio"><img alt="Build Status" src="https://travis-ci.org/francarmona/francisco-carmona-portfolio.svg?branch=master"></a>
   <a href="http://makeapullrequest.com"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"></a>
 </p>
 
 <p align="center">
-  A Vue scaffold for building progressive web apps out of the box.
+  A fork of [Vue PWA Scaffold](https://github.com/francarmona/vue-pwa-es6-gulp-scaffold).
 </p>
 
-### [Live demo](https://pwa-es6-gulp-scaffold.firebaseapp.com)
+### [Live](https://francisco-carmona-portfolio.firebaseapp.com/)
 
 ## Out of the box
 
