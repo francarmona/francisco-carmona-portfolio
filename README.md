@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  A fork of [Vue PWA Scaffold](https://github.com/francarmona/vue-pwa-es6-gulp-scaffold).
+  A fork of Vue PWA Scaffold (https://github.com/francarmona/vue-pwa-es6-gulp-scaffold).
 </p>
 
 ### [Live](https://francisco-carmona-portfolio.firebaseapp.com/)
