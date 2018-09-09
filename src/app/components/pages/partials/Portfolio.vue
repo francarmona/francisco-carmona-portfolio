@@ -37,13 +37,13 @@ export default {
           &nbsp- the presence of a clearly defined layer of specialized code to manage the relationships between the view components.
         </p>
       `, tags: [{title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/spt-web.png', borderColor: '#4D9DE0'},
-            {id: 3, title:'Backbone.JS', subtitle: 'Lorem ipsum dolor sit amet', body: `
+            {id: 3, title:'Tourist guides App', subtitle: 'Lorem ipsum dolor sit amet', body: `
         <p>
           Backbone.js gives structure to web applications by providing models with key-value binding and custom events,
           collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface.
         </p>
-      `, tags: [{title: 'Backbone.js', image: 'img/brands/backbonejs.svg'}, {title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/pwa-fast.png', borderColor: '#E1BC29'},
-            {id: 4, title:'Ember', subtitle: 'A framework for ambitious web developers', body: `
+      `, tags: [{title: 'Backbone.js', image: 'img/brands/backbonejs.svg'}, {title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/app-guias.png', borderColor: '#36b2c3'},
+            {id: 4, title:'My Trip', subtitle: 'A framework for ambitious web developers', body: `
         <p>
           Developers write dramatically less code with integrated templates that update automatically when the underlying data changes.
         </p>
@@ -53,11 +53,8 @@ export default {
         <p>
           Ember.js is built for productivity. Designed with developer ergonomics in mind, its friendly APIs help developers efficiently get the job done.
         </p>
-      `, tags: [{title: 'Ember', image: 'img/brands/ember.svg'}, {title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/pwa-fast.png', borderColor: '#E1BC29'},
-
-          ]},
-        {groupTitle: '2012 - 2013', events: [
-            {id: 5, title:'Meteor', subtitle: 'The faster way to build Javscript apps', body: `
+      `, tags: [{title: 'Ember', image: 'img/brands/ember.svg'}, {title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/mytrip.png', borderColor: '#ff5b61'},
+            {id: 5, title:'SPT Viajes App', subtitle: 'The faster way to build Javscript apps', body: `
         <p>
           Meteor, or MeteorJS, is a free and open-source isomorphic JavaScript web framework written using Node.js.
           Meteor allows for rapid prototyping and produces cross-platform (Android, iOS, Web) code.
@@ -65,8 +62,10 @@ export default {
           data changes to clients without requiring the developer to write any synchronization code.
           On the client, Meteor can be used with its own Blaze templating engine, as well as with the Angular or React frameworks.
         </p>
-      `, tags: [{title: 'Meteor', image: 'img/brands/meteor.svg'}, {title: 'Javascript', image: 'img/brands/javascript.svg'}],image: 'img/pwa-fast.png', borderColor: '#A4D4B4'},
-            {id: 6, title:'React', subtitle: 'A JavaScript library for building user interfaces', body: `
+      `, tags: [{title: 'Meteor', image: 'img/brands/meteor.svg'}, {title: 'Javascript', image: 'img/brands/javascript.svg'}],image: 'img/pwa-fast.png', borderColor: '#A4D4B4'}
+          ]},
+        {groupTitle: '2012 - 2013', events: [
+            {id: 6, title:'TLS Group', subtitle: 'A JavaScript library for building user interfaces', body: `
         <p>
           React makes it painless to create interactive UIs. Design simple views for each state in your application,
           and React will efficiently update and render just the right components when your data changes.
@@ -74,13 +73,13 @@ export default {
         <p>
           Build encapsulated components that manage their own state, then compose them to make complex UIs.
         </p>
-      `, tags: [{title: 'Meteor', image: 'img/brands/react.svg'}, {title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/pwa-fast.png', borderColor: '#1C5253'},
-            {id: 7, title:'Polymer', subtitle: 'Extend the HTML', body: `
+      `, tags: [{title: 'Meteor', image: 'img/brands/react.svg'}, {title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/tls-group.png', borderColor: '#48b8c7'},
+            {id: 7, title:'Vue PWA Boilerplate', subtitle: 'Extend the HTML', body: `
         <p>
           The Polymer library provides a set of features for creating custom elements.
           These features are designed to make it easier and faster to make custom elements that work like standard DOM elements.
         </p>
-      `, tags: [{title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/pwa-fast.png', borderColor: '#1C5253'}
+      `, tags: [{title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/pwa-vue-scaffold.png', borderColor: '#53bdaa'}
           ]},
         {groupTitle: '2014 - 2015', events: [
             {id: 8, title:'Vue.js', subtitle: 'The Progressive JavaScript Framework', body: `
