@@ -18,7 +18,7 @@ export default {
     return {
       groups: [
         {groupTitle: 'Currently<div>Happily working on asdfsdfER</div>', events: [
-            {id: 1, title:'AngularJs', subtitle: 'Superheroic JavaScript MVW Framework', body: `
+            {id: 1, title:'SIGO - Special Tours', subtitle: 'Superheroic JavaScript MVW Framework', body: `
         <p>
           HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications.
         </p>
@@ -26,8 +26,8 @@ export default {
           AngularJS lets you extend HTML vocabulary for your application.
           The resulting environment is extraordinarily expressive, readable, and quick to develop.
         </p>
-        `, tags: [{title: 'Angularjs', image: 'img/brands/angularjs.svg'}, {title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/pwa-fast.png', borderColor: '#3BB273'},
-            {id: 2, title:'Knockout', subtitle: 'Lorem ipsum dolor sit amet', body: `
+        `, tags: [{title: 'Angularjs', image: 'img/brands/angularjs.svg'}, {title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/sigo-spt.png', borderColor: '#E31B23'},
+            {id: 2, title:'Special Tours', subtitle: 'Lorem ipsum dolor sit amet', body: `
         <p>
           Knockout is a standalone JavaScript implementation of the Model-View-ViewModel pattern with templates.
         </p>
@@ -36,7 +36,7 @@ export default {
           &nbsp- a clear separation between domain data, view components and data to be displayed. <br>
           &nbsp- the presence of a clearly defined layer of specialized code to manage the relationships between the view components.
         </p>
-      `, tags: [{title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/pwa-fast.png', borderColor: '#4D9DE0'},
+      `, tags: [{title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/spt-web.png', borderColor: '#4D9DE0'},
             {id: 3, title:'Backbone.JS', subtitle: 'Lorem ipsum dolor sit amet', body: `
         <p>
           Backbone.js gives structure to web applications by providing models with key-value binding and custom events,

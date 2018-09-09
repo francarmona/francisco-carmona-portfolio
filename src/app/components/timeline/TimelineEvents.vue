@@ -160,6 +160,7 @@ export default {
       border: 1px solid #ddd;
       .event-title {
         position: absolute;
+        left: 1.6rem;
         z-index: 9999;
       }
 
@@ -177,9 +178,6 @@ export default {
         .event-icon {
           left: -80px;
         }
-        .event-title {
-          left: 3.5rem;
-        }
         .event-detail {
           padding: 1rem 5rem 1rem 0;
         }
@@ -188,9 +186,6 @@ export default {
       &.odd {
         .event-icon {
           right: -80px;
-        }
-        .event-title {
-          right: 3.5rem;
         }
         .event-detail {
           padding: 1rem 0 1rem 5rem;
