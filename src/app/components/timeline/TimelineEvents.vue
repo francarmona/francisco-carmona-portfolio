@@ -167,7 +167,7 @@ export default {
       .event-icon-wrapper {
         .event-icon {
           transform: scale(2);
-          opacity: .6;
+          top: 150px;
         }
         .event-icon-arrow {
           display: none;
