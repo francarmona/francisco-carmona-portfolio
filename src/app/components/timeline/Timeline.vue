@@ -57,10 +57,10 @@ export default {
       min-height: 100%;
       > i {
         position: absolute;
-        left: -19px;
+        left: -14px;
         background: white;
-        font-size: 2.7rem;
-        color: darken(#dddddd, 50%);
+        font-size: 2rem;
+        color: #dddddd;
         &.beginning {
           top: -5px;
         }
@@ -90,7 +90,7 @@ export default {
       .time-line-bar {
         background-color: #b7b7b7;
         > i {
-          color: darken(#b7b7b7, 50%);
+          color: #b7b7b7;
         }
       }
     }
