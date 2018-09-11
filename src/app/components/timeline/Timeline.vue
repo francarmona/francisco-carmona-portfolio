@@ -1,6 +1,9 @@
 <template>
   <div class="time-line">
-    <div class="time-line-bar"></div>
+    <div class="time-line-bar">
+      <i class="material-icons beginning">adjust</i>
+      <i class="material-icons end">bookmark_border</i>
+    </div>
     <div v-for="(group, index) in groupsProcessed" class="row group">
       <div class="col-sm-12">
         <div class="col-sm-12 events-group" v-bind:style="{ padding: index === 0 ? '0 0 2.5rem 0' : '' }">
@@ -40,6 +43,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../scss/theme/variables';
   .time-line {
     position: relative;
     .time-line-bar {
@@ -47,9 +51,23 @@ export default {
       margin-left: -2px;
       position: absolute;
       left: 50%;
-      background-color: #ddd;
+      top: 60px;
+      background-color: #dddddd;
       opacity: .5;
       min-height: 100%;
+      > i {
+        position: absolute;
+        left: -19px;
+        background: white;
+        font-size: 2.7rem;
+        color: darken(#dddddd, 50%);
+        &.beginning {
+          top: -5px;
+        }
+        &.end {
+          bottom: 0;
+        }
+      }
     }
 
     .group {
@@ -60,12 +78,21 @@ export default {
 
     .events-group {
       > div {
-        background-color: white;
+        background-color: $body-bg;
         padding: 5px;
       }
       z-index: 9999;
       text-align: center;
       padding: 2.5rem 0;
+    }
+
+    @media screen and (min-width: $md-breakpoint) {
+      .time-line-bar {
+        background-color: #b7b7b7;
+        > i {
+          color: darken(#b7b7b7, 50%);
+        }
+      }
     }
   }
 </style>

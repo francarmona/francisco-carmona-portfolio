@@ -26,7 +26,7 @@ export default {
           AngularJS lets you extend HTML vocabulary for your application.
           The resulting environment is extraordinarily expressive, readable, and quick to develop.
         </p>
-        `, tags: [{title: 'AngularJS', image: 'img/brands/angularjs.svg'}, {title: 'Laravel', image: 'img/brands/laravel.svg'}, {title: 'MongoDB', image: 'img/brands/mongodb.svg'}, {title: 'Docker', image: 'img/brands/docker.svg'}], image: 'img/sigo-spt.png', borderColor: '#E31B23'},
+        `, tags: [{title: 'AngularJS', image: 'img/brands/angularjs.svg'}, {title: 'Laravel', image: 'img/brands/laravel.svg'}, {title: 'MongoDB', image: 'img/brands/mongodb.svg'}, {title: 'Docker', image: 'img/brands/docker.svg'}], image: 'img/sigo-spt.png', borderColor: '#fd1720'},
             {id: 2, title:'Special Tours', subtitle: 'Lorem ipsum dolor sit amet', body: `
         <p>
           Knockout is a standalone JavaScript implementation of the Model-View-ViewModel pattern with templates.
@@ -36,7 +36,7 @@ export default {
           &nbsp- a clear separation between domain data, view components and data to be displayed. <br>
           &nbsp- the presence of a clearly defined layer of specialized code to manage the relationships between the view components.
         </p>
-      `, tags: [{title: 'AngularJS', image: 'img/brands/angularjs.svg'}, {title: 'Laravel', image: 'img/brands/laravel.svg'}, {title: 'MongoDB', image: 'img/brands/mongodb.svg'}, {title: 'Docker', image: 'img/brands/docker.svg'}], image: 'img/spt-web.png', borderColor: '#4D9DE0'},
+      `, tags: [{title: 'AngularJS', image: 'img/brands/angularjs.svg'}, {title: 'Laravel', image: 'img/brands/laravel.svg'}, {title: 'MongoDB', image: 'img/brands/mongodb.svg'}, {title: 'Docker', image: 'img/brands/docker.svg'}], image: 'img/spt-web.png', borderColor: '#4d9de0'},
 
             {id: 3, title:'Comercial Viajes', subtitle: 'The faster way to build Javscript apps', body: `
         <p>
@@ -57,7 +57,7 @@ export default {
         <p>
           Ember.js is built for productivity. Designed with developer ergonomics in mind, its friendly APIs help developers efficiently get the job done.
         </p>
-      `, tags: [{title: 'Ember', image: 'img/brands/ember.svg'}, {title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/mytrip.png', borderColor: '#888888'},
+      `, tags: [{title: 'Ember', image: 'img/brands/ember.svg'}, {title: 'Javascript', image: 'img/brands/javascript.svg'}], image: 'img/mytrip.png', borderColor: '#b5b5b5'},
 
 
             {id: 5, title:'Tourist guides', subtitle: 'Lorem ipsum dolor sit amet', body: `
