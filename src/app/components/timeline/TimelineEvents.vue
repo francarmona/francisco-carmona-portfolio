@@ -226,6 +226,17 @@ export default {
         h3 {
           text-align: center;
         }
+        .event-detail-tags {
+          .label {
+            border-radius: 3px;
+            padding: .2em .8em;
+            margin: 0 .4em .4em 0;
+            font-size: .8rem;
+          }
+          img {
+            width: 1rem;
+          }
+        }
       }
     }
   }

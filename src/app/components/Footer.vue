@@ -27,10 +27,10 @@ export default {
     .go-top-button {
       position: absolute;
       cursor: pointer;
-      top: calc(-50px/2);
-      left: calc(50% - 50px/2);
-      width: 50px;
-      height: 50px;
+      top: calc(-45px/2);
+      left: calc(50% - 45px/2);
+      width: 45px;
+      height: 45px;
       background: color($colors, 'primary');
       &:hover {
         background: lighten(color($colors, 'primary'), 2%);
@@ -39,7 +39,7 @@ export default {
         content: "\e5ce";
         font-family: 'Material Icons';
         color: white;
-        font-size: 50px;
+        font-size: 45px;
         position: absolute;
         top: -17px;
       }
@@ -47,7 +47,7 @@ export default {
         content: "\e5ce";
         font-family: 'Material Icons';
         color: white;
-        font-size: 50px;
+        font-size: 45px;
         position: absolute;
         top: -5px;
       }

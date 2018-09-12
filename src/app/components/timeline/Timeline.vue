@@ -51,18 +51,18 @@ export default {
       margin-left: -2px;
       position: absolute;
       left: 50%;
-      top: 60px;
+      top: 15px;
       background-color: #dddddd;
       opacity: .5;
       min-height: 100%;
       > i {
         position: absolute;
-        left: -14px;
+        left: -16px;
         background: white;
-        font-size: 2rem;
+        font-size: 2.25rem;
         color: #dddddd;
         &.beginning {
-          top: -5px;
+          top: -3px;
         }
         &.end {
           bottom: 0;
