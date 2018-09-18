@@ -72,7 +72,7 @@ export default {
           data changes to clients without requiring the developer to write any synchronization code.
           On the client, Meteor can be used with its own Blaze templating engine, as well as with the Angular or React frameworks.
         </p>
-      `, tags: [{title: 'Angular', image: 'img/brands/angularjs.svg'}, {title: 'Ionic', image: 'img/brands/ionic.svg'}, {title: 'Slim', image: 'img/brands/slim.png'}],image: 'img/app-comercial-viajes.png', borderColor: '#7cd499'},
+      `, tags: [{title: 'Angular', image: 'img/brands/angularjs.svg'}, {title: 'Ionic', image: 'img/brands/ionic.svg'}],image: 'img/app-comercial-viajes.png', borderColor: '#7cd499'},
             {id: 5, title:'My Trip', subtitle: 'A framework for ambitious web developers', body: `
         <p>
           Developers write dramatically less code with integrated templates that update automatically when the underlying data changes.
@@ -84,8 +84,6 @@ export default {
           Ember.js is built for productivity. Designed with developer ergonomics in mind, its friendly APIs help developers efficiently get the job done.
         </p>
       `, tags: [{title: 'OnsenUI', image: 'img/brands/onsenui.png'}, {title: 'Slim', image: 'img/brands/slim.png'}], image: 'img/mytrip.png', borderColor: '#b5b5b5'},
-
-
             {id: 6, title:'Tourist guides', subtitle: 'Lorem ipsum dolor sit amet', body: `
         <p>
           Backbone.js gives structure to web applications by providing models with key-value binding and custom events,
