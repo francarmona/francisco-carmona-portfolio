@@ -1,8 +1,11 @@
 <template>
   <section id="about" class="container">
-    <h1>About me</h1>
+    <h1>
+      <span class="underlined">About me</span>
+    </h1>
     <div class="row">
       <div class="col-sm-12">
+        <h2>Bio</h2>
         <p>
           I'm Francisco J. Carmona, a spanish full­stack web developer living in Madrid that speaks PHP and Javascript.
           I have more than 8 years of experience in developing amazing and high-performance web and mobile apps.
@@ -29,7 +32,7 @@
                                                                                 alt="Github Francisco Carmona" href="https://github.com/francarmona">Github</a>.
         </p>
         <p>
-          If you want to know more about me feel free to go to my <a target="_blank" title="Linkedin Francisco Carmona"
+          If you want to know more about me, just browse to my <a target="_blank" title="Linkedin Francisco Carmona"
                                                                      alt="Linkedin Francisco Carmona" href="https://www.linkedin.com/in/francisco-jos%C3%A9-carmona-olmedo-b37a0342">LinkedIn</a>.
         </p>
       </div>
@@ -38,6 +41,48 @@
       <div class="col-sm-12">
         <h2>Skills</h2>
       </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+        <h3>Frontend</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit, volutpat placerat auctor
+          primis habitasse consequat felis sollicitudin, phasellus tellus ut rhoncus facilisi
+          justo. Tincidunt suscipit porttitor nullam ad quam sagittis phasellus malesuada,
+          massa diam dis rhoncus pellentesque risus. Rutrum urna faucibus ac pharetra in
+          nibh magnis, mattis dictum posuere tristique class magna, arcu dignissim platea
+          feugiat ante at.
+        </p>
+      </div>
+      <div class="col-sm-12 col-md-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+        <h3>Backend</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit, volutpat placerat auctor
+          primis habitasse consequat felis sollicitudin, phasellus tellus ut rhoncus facilisi
+          justo. Tincidunt suscipit porttitor nullam ad quam sagittis phasellus malesuada,
+          massa diam dis rhoncus pellentesque risus. Rutrum urna faucibus ac pharetra in
+          nibh magnis, mattis dictum posuere tristique class magna, arcu dignissim platea
+          feugiat ante at.
+        </p>
+      </div>
+      <div class="col-sm-12 col-md-4"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+        <h3>Devops</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit, volutpat placerat auctor
+          primis habitasse consequat felis sollicitudin, phasellus tellus ut rhoncus facilisi
+          justo. Tincidunt suscipit porttitor nullam ad quam sagittis phasellus malesuada,
+          massa diam dis rhoncus pellentesque risus. Rutrum urna faucibus ac pharetra in
+          nibh magnis, mattis dictum posuere tristique class magna, arcu dignissim platea
+          feugiat ante at.
+        </p>
+      </div>
+      <div class="col-sm-12 col-md-4"></div>
     </div>
   </section>
 </template>

@@ -78,11 +78,21 @@ header {
 section {
   h2 {
     text-align: center;
+    font-weight: normal;
   }
   h1 {
     text-align: center;
     font-weight: normal;
     font-size: 2rem;
+    span {
+      &.underlined {
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  h3 {
+    font-weight: normal;
   }
 }
 

@@ -1,9 +1,11 @@
 <template>
   <section id="portfolio" class="container">
-    <h1>Portfolio</h1>
-    <div class="row currently">
+    <h1>
+      <span class="underlined">Portfolio</span>
+    </h1>
+    <div class="row">
       <div class="col-sm-12">
-        Currently...
+        <h2>Currently...</h2>
       </div>
     </div>
     <div class="row happily">
@@ -116,11 +118,6 @@ export default {
 
 <style lang="scss" scoped>
   #portfolio {
-    .currently {
-      text-align: center;
-      font-size: 1.5rem;
-      padding-bottom: .9rem;
-    }
     .happily {
       text-align: center;
       font-size: 1.25rem;

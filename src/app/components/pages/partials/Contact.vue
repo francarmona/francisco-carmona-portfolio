@@ -1,6 +1,8 @@
 <template>
   <section id="contact" class="container">
-    <h1>Contact</h1>
+    <h1>
+      <span class="underlined">Contact</span>
+    </h1>
     <div class="row social">
       <div class="col-sm-2 col-sm-push-3 text-center">
         <a target="_blank" title="Github - Francisco Carmona" href="https://github.com/francarmona">

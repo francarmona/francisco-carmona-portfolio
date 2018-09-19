@@ -22,7 +22,7 @@ export default {
     padding: 30px 0;
     background-color: color($colors, 'light');
     p {
-      font-size: .95rem;
+      font-size: .9rem;
     }
     .go-top-button {
       position: absolute;
