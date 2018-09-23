@@ -33,7 +33,8 @@
         </p>
         <p>
           If you want to know more about me, just browse to my <a target="_blank" title="Linkedin Francisco Carmona"
-                                                                     alt="Linkedin Francisco Carmona" href="https://www.linkedin.com/in/francisco-jos%C3%A9-carmona-olmedo-b37a0342">LinkedIn</a>.
+                                                                     alt="Linkedin Francisco Carmona"
+                                                                  href="https://www.linkedin.com/in/francisco-jos%C3%A9-carmona-olmedo-b37a0342">LinkedIn</a>.
         </p>
       </div>
     </div>
@@ -42,47 +43,158 @@
         <h2>Skills</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-8">
-        <h3>Frontend</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, volutpat placerat auctor
-          primis habitasse consequat felis sollicitudin, phasellus tellus ut rhoncus facilisi
-          justo. Tincidunt suscipit porttitor nullam ad quam sagittis phasellus malesuada,
-          massa diam dis rhoncus pellentesque risus. Rutrum urna faucibus ac pharetra in
-          nibh magnis, mattis dictum posuere tristique class magna, arcu dignissim platea
-          feugiat ante at.
-        </p>
+    <div class="skill-wrapper">
+      <div class="skill-group row">
+        <div class="col-sm-12">
+          <h3>Frontend</h3>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/html5.svg">
+            HTML5
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/css3.svg">
+            CSS3
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/sass.svg">
+            Sass
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/angularjs.svg">
+            Angular
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/ionic.svg">
+            Ionic
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/jasmine.svg">
+            Jasmine
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/vuejs.svg">
+            Vue
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/react.svg">
+            React
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/nodejs.svg">
+            Node
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/npm.svg">
+            Npm
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/bower.svg">
+            Bower
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/gulp.svg">
+            Gulp
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/grunt.svg">
+            Grunt
+          </div>
+        </div>
       </div>
-      <div class="col-sm-12 col-md-4"></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-8">
-        <h3>Backend</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, volutpat placerat auctor
-          primis habitasse consequat felis sollicitudin, phasellus tellus ut rhoncus facilisi
-          justo. Tincidunt suscipit porttitor nullam ad quam sagittis phasellus malesuada,
-          massa diam dis rhoncus pellentesque risus. Rutrum urna faucibus ac pharetra in
-          nibh magnis, mattis dictum posuere tristique class magna, arcu dignissim platea
-          feugiat ante at.
-        </p>
+      <div class="skill-group row">
+        <div class="col-sm-12">
+          <h3>Backend</h3>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/html5.svg">
+            HTML5
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/css3.svg">
+            CSS3
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/sass.svg">
+            Sass
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/angularjs.svg">
+            Angular
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/ionic.svg">
+            Ionic
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/jasmine.svg">
+            Jasmine
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/vuejs.svg">
+            Vue
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/react.svg">
+            React
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/nodejs.svg">
+            Node
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/npm.svg">
+            Npm
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/bower.svg">
+            Bower
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/gulp.svg">
+            Gulp
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/grunt.svg">
+            Grunt
+          </div>
+        </div>
       </div>
-      <div class="col-sm-12 col-md-4"></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-8">
-        <h3>Devops</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, volutpat placerat auctor
-          primis habitasse consequat felis sollicitudin, phasellus tellus ut rhoncus facilisi
-          justo. Tincidunt suscipit porttitor nullam ad quam sagittis phasellus malesuada,
-          massa diam dis rhoncus pellentesque risus. Rutrum urna faucibus ac pharetra in
-          nibh magnis, mattis dictum posuere tristique class magna, arcu dignissim platea
-          feugiat ante at.
-        </p>
+      <div class="skill-group row">
+        <div class="col-sm-12">
+          <h3>Devops</h3>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/html5.svg">
+            HTML5
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/css3.svg">
+            CSS3
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/sass.svg">
+            Sass
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/angularjs.svg">
+            Angular
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/ionic.svg">
+            Ionic
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/jasmine.svg">
+            Jasmine
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/vuejs.svg">
+            Vue
+          </div>
+          <div class="skill-item col-sm-6 col-md-2">
+            <img src="img/brands/react.svg">
+            React
+          </div>
+        </div>
       </div>
-      <div class="col-sm-12 col-md-4"></div>
     </div>
   </section>
 </template>
@@ -95,8 +207,37 @@ export default {
 
 <style lang="scss" scoped>
   #about {
+    h2 {
+      font-size: 2rem;
+    }
     a {
       text-decoration: underline;
+    }
+
+    .skill-wrapper {
+      & .skill-group:not(:last-child){
+        margin-bottom: 4rem;
+      }
+      .skill-group {
+        background-color: white;
+        border-radius: 8px;
+        padding: 0 30px;
+        border: 1px solid #ddd;
+        h3 {
+          font-size: 1.5rem;
+          border-bottom: 1px solid #eaeaea;
+          padding-bottom: 20px;
+        }
+      }
+      .skill-item {
+        padding: 20px 5px;
+        text-align: center;
+        img {
+          max-width: 85px;
+          margin: 0 auto;
+          display: block;
+        }
+      }
     }
   }
 </style>
