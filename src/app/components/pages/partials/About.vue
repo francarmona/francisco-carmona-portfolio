@@ -7,7 +7,7 @@
       <div class="col-sm-12">
         <h2>Bio</h2>
         <p>
-          I'm Francisco J. Carmona, a spanish full­stack web developer living in Madrid that speaks PHP and Javascript.
+          I'm Francisco J. Carmona, a Spanish full­stack web developer living in Madrid that speaks PHP and Javascript.
           I have more than 8 years of experience in developing amazing and high-performance web and mobile apps.
           I live and breathe web development. I'm a full stack geek that enjoys digging into the latest web technologies.
         </p>
