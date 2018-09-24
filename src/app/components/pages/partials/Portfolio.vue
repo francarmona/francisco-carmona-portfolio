@@ -11,7 +11,7 @@
     <div class="row happily">
       <div class="col-sm-12 col-md-4 col-md-push-4 happily-wrapper-text">Coding happily every day on </div>
       <div class="col-sm-12">
-        <img src="https://assets1.specialtours.com/img/logo/SpecialToursPositivoMenu.png" alt="Special Tours">
+        <img src="/img/brands/specialtours.png" alt="Special Tours">
       </div>
     </div>
     <Timeline v-bind:groups="groups"></Timeline>
@@ -43,7 +43,7 @@ export default {
                 {title: 'Laravel', image: 'img/brands/laravel.svg'},
                 {title: 'Slim', image: 'img/brands/slim.png'},
                 {title: 'MongoDB', image: 'img/brands/mongodb.svg'},
-                {title: 'Openshift', image: 'img/brands/openshift.png'},
+                {title: 'Openshift', image: 'img/brands/openshift.svg'},
                 {title: 'Docker', image: 'img/brands/docker.svg'}], image: 'img/sigo-spt.png', borderColor: '#fd1720'},
             {id: 2, title:'Special Tours', subtitle: 'Lorem ipsum dolor sit amet', body: `
         <p>
@@ -58,7 +58,7 @@ export default {
                 {title: 'Laravel', image: 'img/brands/laravel.svg'},
                 {title: 'Slim', image: 'img/brands/slim.png'},
                 {title: 'MongoDB', image: 'img/brands/mongodb.svg'},
-                {title: 'Openshift', image: 'img/brands/openshift.png'},
+                {title: 'Openshift', image: 'img/brands/openshift.svg'},
                 {title: 'Docker', image: 'img/brands/docker.svg'}], image: 'img/spt-web.png', borderColor: '#4d9de0'},
             {id: 3, title:'Vue PWA Boilerplate', subtitle: 'Extend the HTML', body: `
         <p>

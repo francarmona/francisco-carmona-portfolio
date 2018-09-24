@@ -9,7 +9,7 @@
     <div class="container">
       <article class="row top-marged">
         <article class="col-md-6 col-md-push-6 text-center">
-          <h2>Hello visitors! Welcome to my website</h2>
+          <h2>Howdy visitors! Welcome to my website</h2>
         </article>
         <article class="col-md-6 col-md-pull-6">
           <div class="laptop centered">

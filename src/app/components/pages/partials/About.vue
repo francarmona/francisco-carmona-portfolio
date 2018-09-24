@@ -47,151 +47,27 @@
       <div class="skill-group row">
         <div class="col-sm-12">
           <h3>Frontend</h3>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/html5.svg">
-            HTML5
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/css3.svg">
-            CSS3
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/sass.svg">
-            Sass
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/angularjs.svg">
-            Angular
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/ionic.svg">
-            Ionic
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/jasmine.svg">
-            Jasmine
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/vuejs.svg">
-            Vue
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/react.svg">
-            React
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/nodejs.svg">
-            Node
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/npm.svg">
-            Npm
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/bower.svg">
-            Bower
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/gulp.svg">
-            Gulp
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/grunt.svg">
-            Grunt
+          <div v-for="item in skills.frontend" class="skill-item col-sm-6 col-md-2">
+            <img v-bind:src="item.image">
+            {{ item.title }}
           </div>
         </div>
       </div>
       <div class="skill-group row">
         <div class="col-sm-12">
           <h3>Backend</h3>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/html5.svg">
-            HTML5
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/css3.svg">
-            CSS3
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/sass.svg">
-            Sass
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/angularjs.svg">
-            Angular
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/ionic.svg">
-            Ionic
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/jasmine.svg">
-            Jasmine
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/vuejs.svg">
-            Vue
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/react.svg">
-            React
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/nodejs.svg">
-            Node
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/npm.svg">
-            Npm
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/bower.svg">
-            Bower
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/gulp.svg">
-            Gulp
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/grunt.svg">
-            Grunt
+          <div v-for="item in skills.backend" class="skill-item col-sm-6 col-md-2">
+            <img v-bind:src="item.image">
+            {{ item.title }}
           </div>
         </div>
       </div>
       <div class="skill-group row">
         <div class="col-sm-12">
-          <h3>Devops</h3>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/html5.svg">
-            HTML5
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/css3.svg">
-            CSS3
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/sass.svg">
-            Sass
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/angularjs.svg">
-            Angular
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/ionic.svg">
-            Ionic
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/jasmine.svg">
-            Jasmine
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/vuejs.svg">
-            Vue
-          </div>
-          <div class="skill-item col-sm-6 col-md-2">
-            <img src="img/brands/react.svg">
-            React
+          <h3>DevOps</h3>
+          <div v-for="item in skills.devops" class="skill-item col-sm-6 col-md-2">
+            <img v-bind:src="item.image">
+            {{ item.title }}
           </div>
         </div>
       </div>
@@ -201,11 +77,60 @@
 
 <script>
 export default {
-  name: 'About'
+  name: 'About',
+  data: () => {
+    return {
+      skills: {
+        frontend: [
+          {title:'HTML5', image:'img/brands/html5.svg'},
+          {title:'CSS3', image:'img/brands/css3.svg'},
+          {title:'Sass', image:'img/brands/sass.svg'},
+          {title:'Angular', image:'img/brands/angularjs.svg'},
+          {title:'Ionic', image:'img/brands/ionic.svg'},
+          {title:'OnsenUI', image:'img/brands/onsenui.png'},
+          {title:'Vue', image:'img/brands/vuejs.svg'},
+          {title:'React', image:'img/brands/react.svg'},
+          {title:'Redux', image:'img/brands/redux.svg'},
+          {title:'Jasmine', image:'img/brands/jasmine.svg'},
+          {title:'Karma', image:'img/brands/karma.svg'},
+          {title:'Npm', image:'img/brands/npm.svg'},
+          {title:'Bower', image:'img/brands/bower.svg'},
+          {title:'Gulp', image:'img/brands/gulp.svg'},
+          {title:'Grunt', image:'img/brands/grunt.svg'}
+        ],
+        backend: [
+          {title:'PHP', image:'img/brands/php.svg'},
+          {title:'Laravel', image:'img/brands/laravel.svg'},
+          {title:'Slim', image:'img/brands/slim.png'},
+          {title:'Codeigniter', image:'img/brands/codeigniter.svg'},
+          {title:'FuelPhp', image:'img/brands/fuelphp.png'},
+          {title:'Node', image:'img/brands/nodejs.svg'},
+          {title:'Mongo', image:'img/brands/mongodb.svg'},
+          {title:'Mysql', image:'img/brands/mysql.svg'},
+          {title:'Cassandra', image:'img/brands/cassandra.svg'}
+        ],
+        devops: [
+          {title:'Docker', image:'img/brands/docker.svg'},
+          {title:'Rancher', image:'img/brands/rancher.svg'},
+          {title:'Openshift', image:'img/brands/openshift.svg'},
+          {title:'Kubernetes', image:'img/brands/kubernets.svg'},
+          {title:'Jenkins', image:'img/brands/jenkins.svg'},
+          {title:'SonarQube', image:'img/brands/sonarqube.png'},
+          {title:'Git', image:'img/brands/git.svg'},
+          {title:'Gitlab', image:'img/brands/gitlab.svg'},
+          {title:'AWS EC2', image:'img/brands/aws-ec2.svg'},
+          {title:'AWS S3', image:'img/brands/aws-s3.svg'},
+          {title:'Jira', image:'img/brands/jira.svg'},
+          {title:'Sentry', image:'img/brands/sentry.svg'},
+        ]
+      }
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
+  @import '../../../scss/theme/variables';
   #about {
     h2 {
       font-size: 2rem;
@@ -233,9 +158,28 @@ export default {
         padding: 20px 5px;
         text-align: center;
         img {
-          max-width: 85px;
+          max-height: 80px;
           margin: 0 auto;
           display: block;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $md-breakpoint - 1) {
+    #about {
+      .skill-wrapper {
+        & .skill-group:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+        .skill-group {
+          h3 {
+            font-size: 1.3rem;
+          }
+        }
+        .skill-item {
+          img {
+            max-height: 55px;
+          }
         }
       }
     }
