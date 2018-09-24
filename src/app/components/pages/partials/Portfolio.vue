@@ -33,11 +33,16 @@ export default {
         {groupTitle: '', events: [
             {id: 1, title:'SIGO', subtitle: 'Sistema Integral de Gestión Online', body: `
         <p>
-          HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications.
+        Online management system for operating with tourist packages.
         </p>
         <p>
-          AngularJS lets you extend HTML vocabulary for your application.
-          The resulting environment is extraordinarily expressive, readable, and quick to develop.
+          Somme years ago it was an application made in Visual Basic. The company needed access to it from everywhere and from any device,
+          that is why we migrated it to a web application. It has been developed in AngularJs, but it is not
+          a regular SPA, it is a "multi-angular-app". We have one AngularJs app (with its own routing) per feature, and we load each one
+          in a Laravel route. Every application consumes an API Rest developed with Slim framework.
+          Right now we are evolving the app and migrating it to Angular 6 in a progressive way, so AngularJs and Angular 6
+          apps are dealing together in the same Laravel "skeleton". Same way we are splitting the Api Rest
+          into small microservices.
         </p>
         `, tags: [{title: 'AngularJS', image: 'img/brands/angularjs.svg'},
                 {title: 'Laravel', image: 'img/brands/laravel.svg'},
@@ -45,7 +50,7 @@ export default {
                 {title: 'MongoDB', image: 'img/brands/mongodb.svg'},
                 {title: 'Openshift', image: 'img/brands/openshift.svg'},
                 {title: 'Docker', image: 'img/brands/docker.svg'}], image: 'img/sigo-spt.png', borderColor: '#fd1720'},
-            {id: 2, title:'Special Tours', subtitle: 'Lorem ipsum dolor sit amet', body: `
+            {id: 2, title:'Special Tours', subtitle: 'Reservation system for travel agencies', body: `
         <p>
           Knockout is a standalone JavaScript implementation of the Model-View-ViewModel pattern with templates.
         </p>

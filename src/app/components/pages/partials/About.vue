@@ -96,6 +96,7 @@ export default {
           {title:'Npm', image:'img/brands/npm.svg'},
           {title:'Bower', image:'img/brands/bower.svg'},
           {title:'Gulp', image:'img/brands/gulp.svg'},
+          {title:'Webpack', image:'img/brands/webpack.svg'},
           {title:'Grunt', image:'img/brands/grunt.svg'}
         ],
         backend: [
@@ -174,11 +175,12 @@ export default {
         .skill-group {
           h3 {
             font-size: 1.3rem;
+            text-align: center;
           }
         }
         .skill-item {
           img {
-            max-height: 55px;
+            max-height: 50px;
           }
         }
       }
