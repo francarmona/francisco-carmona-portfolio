@@ -68,25 +68,21 @@ export default {
                 {title: 'Openshift', image: 'img/brands/openshift.svg'},
                 {title: 'Docker', image: 'img/brands/docker.svg'}], image: 'img/spt-web.png', borderColor: '#4d9de0'},
             {id: 3, title:'Vue PWA Boilerplate', subtitle: 'Offline first web app', body: `
-        <p>
-          Home made project for easily building Progressive Web Apps.
-        </p>
+        <p>Home made project for easily building Progressive Web Apps.</p>
         <p>
           It has all features of a PWA (reliable, fast and engaging) and others like hot reloading
           (HMR), lazy loaded images, linting, unit testing with Vue Test Utils and Jest, Travis CI integration, Firebase deployment.
         </p>
         <p>My portfolio is a fork of this project.</p>
         <p>
-          Have a look at <a href="https://github.com/francarmona/vue-pwa-es6-gulp-scaffold" title="Github - Vue PWA Boilerplate">Github</a>!
+          Have a look at <a target="_blank" href="https://github.com/francarmona/vue-pwa-es6-gulp-scaffold" title="Github - Vue PWA Boilerplate">Github</a>!
         </p>
       `, tags: [{title: 'VueJS', image: 'img/brands/vuejs.svg'},{title: 'Gulp', image: 'img/brands/gulp.svg'}], image: 'img/pwa-vue-scaffold.png', borderColor: '#16bac5'},
-            {id: 4, title:'Comercial Viajes', subtitle: 'The faster way to build Javscript apps', body: `
-        <p>
-          Meteor, or MeteorJS, is a free and open-source isomorphic JavaScript web framework written using Node.js.
-          Meteor allows for rapid prototyping and produces cross-platform (Android, iOS, Web) code.
-          It integrates with MongoDB and uses the Distributed Data Protocol and a publish–subscribe pattern to automatically propagate
-          data changes to clients without requiring the developer to write any synchronization code.
-          On the client, Meteor can be used with its own Blaze templating engine, as well as with the Angular or React frameworks.
+            {id: 4, title:'Comercial Viajes', subtitle: 'Mobile app for travel agents', body: `
+        <p>Travel agents can arrange business trips and organize the meetings with their clients.</p>
+        <p>On trip they can even search for sales statistics of the clients they are visiting or
+          fill out reports about how the meeting was, and much more. It all works offline and it
+          is automatically synchronized when the device is online.
         </p>
       `, tags: [{title: 'Angular', image: 'img/brands/angularjs.svg'}, {title: 'Ionic', image: 'img/brands/ionic.svg'}],image: 'img/app-comercial-viajes.png', borderColor: '#7cd499'},
             {id: 5, title:'My Trip', subtitle: 'A framework for ambitious web developers', body: `
