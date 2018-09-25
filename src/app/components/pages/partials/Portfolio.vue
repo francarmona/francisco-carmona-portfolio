@@ -36,10 +36,12 @@ export default {
         Online management system for operating with tourist packages.
         </p>
         <p>
-          Somme years ago it was an application made in Visual Basic. The company needed access to it from everywhere and from any device,
+          Some years ago it was an application made in Visual Basic. The company needed access to it from everywhere and from any device,
           that is why we migrated it to a web application. It has been developed in AngularJs, but it is not
           a regular SPA, it is a "multi-angular-app". We have one AngularJs app (with its own routing) per feature, and we load each one
           in a Laravel route. Every application consumes an API Rest developed with Slim framework.
+        </p>
+        <p>
           Right now we are evolving the app and migrating it to Angular 6 in a progressive way, so AngularJs and Angular 6
           apps are dealing together in the same Laravel "skeleton". Same way we are splitting the Api Rest
           into small microservices.
@@ -50,14 +52,14 @@ export default {
                 {title: 'MongoDB', image: 'img/brands/mongodb.svg'},
                 {title: 'Openshift', image: 'img/brands/openshift.svg'},
                 {title: 'Docker', image: 'img/brands/docker.svg'}], image: 'img/sigo-spt.png', borderColor: '#fd1720'},
-            {id: 2, title:'Special Tours', subtitle: 'Reservation system for travel agencies', body: `
+            {id: 2, title:'Special Tours', subtitle: 'Reservation website for travel agencies', body: `
         <p>
-          Knockout is a standalone JavaScript implementation of the Model-View-ViewModel pattern with templates.
+          Travel agencies book tour packages and manage the reservations through this website.
         </p>
         <p>
-          The underlying principles are therefore: <br>
-          &nbsp- a clear separation between domain data, view components and data to be displayed. <br>
-          &nbsp- the presence of a clearly defined layer of specialized code to manage the relationships between the view components.
+          The crucial part was to make it extremely fast and reliable because most of the visitors are from
+          South America and there the internet connection is quite slow.
+          The application is containerized and deployed on an OpenShift cluster and full monitored with Instana.
         </p>
       `, tags: [{title: 'AngularJS', image: 'img/brands/angularjs.svg'},
                 {title: 'Laravel', image: 'img/brands/laravel.svg'},
@@ -65,10 +67,17 @@ export default {
                 {title: 'MongoDB', image: 'img/brands/mongodb.svg'},
                 {title: 'Openshift', image: 'img/brands/openshift.svg'},
                 {title: 'Docker', image: 'img/brands/docker.svg'}], image: 'img/spt-web.png', borderColor: '#4d9de0'},
-            {id: 3, title:'Vue PWA Boilerplate', subtitle: 'Extend the HTML', body: `
+            {id: 3, title:'Vue PWA Boilerplate', subtitle: 'Offline first web app', body: `
         <p>
-          The Polymer library provides a set of features for creating custom elements.
-          These features are designed to make it easier and faster to make custom elements that work like standard DOM elements.
+          Home made project for easily building Progressive Web Apps.
+        </p>
+        <p>
+          It has all features of a PWA (reliable, fast and engaging) and others like hot reloading
+          (HMR), lazy loaded images, linting, unit testing with Vue Test Utils and Jest, Travis CI integration, Firebase deployment.
+        </p>
+        <p>My portfolio is a fork of this project.</p>
+        <p>
+          Have a look at <a href="https://github.com/francarmona/vue-pwa-es6-gulp-scaffold" title="Github - Vue PWA Boilerplate">Github</a>!
         </p>
       `, tags: [{title: 'VueJS', image: 'img/brands/vuejs.svg'},{title: 'Gulp', image: 'img/brands/gulp.svg'}], image: 'img/pwa-vue-scaffold.png', borderColor: '#16bac5'},
             {id: 4, title:'Comercial Viajes', subtitle: 'The faster way to build Javscript apps', body: `

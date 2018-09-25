@@ -71,6 +71,14 @@ export default {
 }
 </script>
 
+<style lang="scss">
+  .event-detail {
+    a {
+      text-decoration: underline;
+    }
+  }
+</style>
+
 <style lang="scss" scoped>
   @import '../../scss/theme/variables';
   @import '../../scss/functions';
