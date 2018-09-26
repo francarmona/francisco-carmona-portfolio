@@ -96,10 +96,9 @@ export default {
           Ember.js is built for productivity. Designed with developer ergonomics in mind, its friendly APIs help developers efficiently get the job done.
         </p>
       `, tags: [{title: 'OnsenUI', image: 'img/brands/onsenui.png'}, {title: 'Slim', image: 'img/brands/slim.png'}], image: 'img/mytrip.png', borderColor: '#b5b5b5'},
-            {id: 6, title:'Tourist guides', subtitle: 'Lorem ipsum dolor sit amet', body: `
+            {id: 6, title:'Tourist guides', subtitle: 'Mobile app for tourist guides', body: `
         <p>
-          Backbone.js gives structure to web applications by providing models with key-value binding and custom events,
-          collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface.
+          Guides can find all the documentation they need during the tour (arrival dates of passengers, transfer information, reports, quality surveys, ...), sell tourist visits and much more.
         </p>
       `, tags: [{title: 'OnsenUI', image: 'img/brands/onsenui.png'}, {title: 'Slim', image: 'img/brands/slim.png'}], image: 'img/app-guias.png', borderColor: '#36b2c3'},
             {id: 7, title:'Tourist visits', subtitle: 'Lorem ipsum dolor sit amet', body: `
@@ -110,13 +109,14 @@ export default {
       `, tags: [{title: 'Angular', image: 'img/brands/angularjs.svg'}, {title: 'Ionic', image: 'img/brands/ionic.svg'}, {title: 'Slim', image: 'img/brands/slim.png'}], image: 'img/excursiones.png', borderColor: '#74a57f'}
           ]},
         {groupTitle: '2013 - 2014', events: [
-            {id: 8, title:'TLS Group', subtitle: 'A JavaScript library for building user interfaces', body: `
+            {id: 8, title:'TLS Group', subtitle: 'A place to find accommodation', body: `
         <p>
-          React makes it painless to create interactive UIs. Design simple views for each state in your application,
-          and React will efficiently update and render just the right components when your data changes.
+          Real state portal where students and travellers book accommodation.
         </p>
         <p>
-          Build encapsulated components that manage their own state, then compose them to make complex UIs.
+          It is developed with a customized PHP MVC framework in backend and in a homemade modular and object oriented
+          way in the frontend.
+          The application is real time error monitored with Sentry.
         </p>
       `, tags: [{title: 'FuelPHP', image: 'img/brands/fuelphp.png'}, {title: 'Javascript', image: 'img/brands/javascript.svg'}, {title: 'HTML5', image: 'img/brands/html5.svg'}, {title: 'CSS', image: 'img/brands/css3.svg'}], image: 'img/tls-group.png', borderColor: '#9fcc4d'}
           ]}

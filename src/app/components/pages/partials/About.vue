@@ -93,6 +93,7 @@ export default {
           {title:'Redux', image:'img/brands/redux.svg'},
           {title:'Jasmine', image:'img/brands/jasmine.svg'},
           {title:'Karma', image:'img/brands/karma.svg'},
+          {title:'Jest', image:'img/brands/jest.svg'},
           {title:'Npm', image:'img/brands/npm.svg'},
           {title:'Bower', image:'img/brands/bower.svg'},
           {title:'Gulp', image:'img/brands/gulp.svg'},

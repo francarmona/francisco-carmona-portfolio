@@ -46,6 +46,7 @@ export default {
   @import '../../scss/theme/variables';
   .time-line {
     position: relative;
+    padding-bottom: 30px;
     .time-line-bar {
       width: 4px;
       margin-left: -2px;
