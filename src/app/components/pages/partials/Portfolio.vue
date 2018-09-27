@@ -85,23 +85,18 @@ export default {
           is automatically synchronized when the device is online.
         </p>
       `, tags: [{title: 'Angular', image: 'img/brands/angularjs.svg'}, {title: 'Ionic', image: 'img/brands/ionic.svg'}],image: 'img/app-comercial-viajes.png', borderColor: '#7cd499'},
-            {id: 5, title:'My Trip', subtitle: 'A framework for ambitious web developers', body: `
+            {id: 5, title:'My Trip', subtitle: 'A mobile app for passengers', body: `
         <p>
-          Developers write dramatically less code with integrated templates that update automatically when the underlying data changes.
-        </p>
-        <p>
-          No need to waste time on trivial choices. Ember's abstractions allow developers to focus on what makes your app unique.
-        </p>
-        <p>
-          Ember.js is built for productivity. Designed with developer ergonomics in mind, its friendly APIs help developers efficiently get the job done.
+          On trip passengers can see their daily travel program, list of hotels, transfer information, communicate with their tourist guide and
+          assess the quality of service.
         </p>
       `, tags: [{title: 'OnsenUI', image: 'img/brands/onsenui.png'}, {title: 'Slim', image: 'img/brands/slim.png'}], image: 'img/mytrip.png', borderColor: '#b5b5b5'},
-            {id: 6, title:'Tourist guides', subtitle: 'Mobile app for tourist guides', body: `
+            {id: 6, title:'Tourist guides', subtitle: 'A mobile app for tourist guides', body: `
         <p>
           Guides can find all the documentation they need during the tour (arrival dates of passengers, transfer information, reports, quality surveys, ...), sell tourist visits and much more.
         </p>
       `, tags: [{title: 'OnsenUI', image: 'img/brands/onsenui.png'}, {title: 'Slim', image: 'img/brands/slim.png'}], image: 'img/app-guias.png', borderColor: '#36b2c3'},
-            {id: 7, title:'Tourist visits', subtitle: 'Lorem ipsum dolor sit amet', body: `
+            {id: 7, title:'Tourist visits', subtitle: 'A mobile app for selling tourist visits', body: `
         <p>
           Backbone.js gives structure to web applications by providing models with key-value binding and custom events,
           collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface.
