@@ -166,9 +166,8 @@ export default {
         }
       }
     }
-  }
-  @media screen and (max-width: $md-breakpoint - 1) {
-    #about {
+
+    @media screen and (max-width: $md-breakpoint - 1) {
       .skill-wrapper {
         & .skill-group:not(:last-child) {
           margin-bottom: 2rem;

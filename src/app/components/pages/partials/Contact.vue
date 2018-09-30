@@ -70,10 +70,11 @@ export default {
     }
     .social {
       img {
-        width: 60px;
+        width: 50px;
         height: auto;
       }
     }
+
     @media screen and (min-width: $md-breakpoint) {
       h3 {
         font-size: 1.6rem;
@@ -92,10 +93,10 @@ export default {
           font-size: 1.6rem;
         }
       }
-    }
-    .social {
-      img {
-        width: 65px;
+      .social {
+        img {
+          width: 65px;
+        }
       }
     }
   }
