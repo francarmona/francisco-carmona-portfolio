@@ -182,10 +182,8 @@ export default {
         }
       }
     }
-  }
 
-  @media screen and (min-width: $md-breakpoint) {
-    #home {
+    @media screen and (min-width: $md-breakpoint) {
       article {
         h2 {
           font-size: 2rem;
