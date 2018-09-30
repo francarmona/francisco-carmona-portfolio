@@ -98,8 +98,12 @@ export default {
       `, tags: [{title: 'OnsenUI', image: 'img/brands/onsenui.png'}, {title: 'Slim', image: 'img/brands/slim.png'}], image: 'img/app-guias.png', borderColor: '#36b2c3'},
             {id: 7, title:'Tourist visits', subtitle: 'A mobile app for selling tourist visits', body: `
         <p>
-          Backbone.js gives structure to web applications by providing models with key-value binding and custom events,
-          collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface.
+          People book visits to places near from Madrid through the application. Kiosks can use it too for
+          selling visits to pedestrians that don't know about the existence of the mobile application.
+        </p>
+        <p>
+          It is developed with Ionic and unit tested with Karma and Jasmine. The back is a REST API developed
+          with Slim3.
         </p>
       `, tags: [{title: 'Angular', image: 'img/brands/angularjs.svg'}, {title: 'Ionic', image: 'img/brands/ionic.svg'}, {title: 'Slim', image: 'img/brands/slim.png'}], image: 'img/excursiones.png', borderColor: '#74a57f'}
           ]},
