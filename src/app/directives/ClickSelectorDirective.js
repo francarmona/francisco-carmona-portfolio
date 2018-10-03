@@ -9,6 +9,6 @@ export default {
     });
   },
   unbind(element) {
-    element.removeEventListener('click');
+    element.removeEventListener('click', () => {});
   }
 };
