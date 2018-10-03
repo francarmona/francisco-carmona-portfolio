@@ -4,6 +4,8 @@ import store from './store';
 import ClickSelectorDirective from './directives/ClickSelectorDirective';
 import VueScrollActive from 'vue-scrollactive';
 import VueMq from 'vue-mq';
+import VueRouter from 'vue-router';
+import router from './router';
 
 Vue.use(VueMq, {
   breakpoints: {
@@ -12,14 +14,14 @@ Vue.use(VueMq, {
     lg: Infinity,
   }
 });
-
 Vue.use(VueScrollActive);
-
+Vue.use(VueRouter);
 Vue.directive('click-selector', ClickSelectorDirective);
 
 new Vue({
   el: '#app',
   store,
+  router,
   render: h => h(App)
 });
 
