@@ -5,6 +5,10 @@ import Layout from '../components/Layout.vue';
 
 const routes = [
   { path: '/', component: Layout },
+  { path: '/home', component: Layout },
+  { path: '/about', component: Layout },
+  { path: '/portfolio', component: Layout },
+  { path: '/contact', component: Layout },
   { path: '/resume', component: Resume },
   { path: '*', component: PageNotFound }
 ];

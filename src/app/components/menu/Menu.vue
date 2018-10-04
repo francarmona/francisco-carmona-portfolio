@@ -48,6 +48,7 @@ export default {
         padding: 0 2.5rem 0;
         text-align: center;
         .nav-link {
+          -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
           color: white;
           cursor: pointer;
           &.active {
