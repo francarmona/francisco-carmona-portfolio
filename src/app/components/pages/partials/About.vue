@@ -36,6 +36,10 @@
                                                                      alt="Linkedin Francisco Carmona"
                                                                   href="https://www.linkedin.com/in/francisco-jos%C3%A9-carmona-olmedo-b37a0342">LinkedIn</a>.
         </p>
+        <p>
+          Are you a recruiter? If so, I guess you rather my CV in a different layout and format
+          <button v-on:click="window.open('/#/resume', '_blank')" class="btn btn-primary">Let's go!</button>
+        </p>
       </div>
     </div>
     <div class="row">
@@ -80,6 +84,7 @@ export default {
   name: 'About',
   data: () => {
     return {
+      window: window,
       skills: {
         frontend: [
           {title:'HTML5', image:'img/brands/html5.svg'},

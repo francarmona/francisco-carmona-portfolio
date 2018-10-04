@@ -2,9 +2,13 @@
   <div id="cv">
     <div class="background"></div>
     <div class="leave">
+      <button v-on:click="generatePdf" class="btn btn-secondary btn-download hidden-sm">
+        <i class="material-icons">file_download</i>
+        Download
+      </button>
       <header class="row">
         <div class="col-sm-12">
-          <h1 class="title">Francisco J. Carmona Olmedo</h1>
+          <h1 class="title">Francisco José Carmona Olmedo</h1>
           <h2 class="subtitle">Full-stack web developer</h2>
         </div>
       </header>
@@ -12,7 +16,7 @@
         <section class="col-md-4 sidebar">
           <section>
             <h2>Profile</h2>
-            <p>Lorem ipsum qwerasdf qwerty qwer asdfdsf</p>
+            <p>Full stack geek that enjoys digging into the latest web technologies.</p>
           </section>
           <section class="personal-details">
             <h2>Personal details</h2>
@@ -45,7 +49,7 @@
             </div>
           </section>
           <section class="skills">
-            <h2>Skills</h2>
+            <h2>Key Skills</h2>
             <section>
               <h3>Frontend</h3>
               <span class="label" v-for="skill in skills.frontend">{{ skill }}</span>
@@ -63,7 +67,13 @@
         <section class="col-md-8 body">
           <section class="professional-experience">
             <h2>Professional experience</h2>
-            <article v-for="job in jobs">
+            <article class="job" v-for="job in jobs">
+              <div class="time-line">
+                <div>
+                  <i class="material-icons time-line-icon">radio_button_unchecked</i>
+                </div>
+                <div class="time-line-bar"></div>
+              </div>
               <h3>{{ job.role }}</h3>
               <div>
                 <h4>{{ job.company }}</h4>
@@ -82,6 +92,10 @@
               <h4>{{ ed.university }}</h4>
             </article>
           </section>
+          <section class="references">
+            <h2>References</h2>
+            <p>Available on request.</p>
+          </section>
         </section>
       </main>
     </div>
@@ -89,12 +103,39 @@
 </template>
 
 <script>
+import html2canvas from 'html2canvas';
+import { jsPDF } from 'jspdf';
 export default {
   name: 'Resume',
+  methods: {
+    generatePdf: () => {
+      const clone = document.querySelector('.leave').cloneNode(true);
+      clone.querySelector('.btn-download').remove();
+      document.querySelector('#cv').appendChild(clone);
+      let uls = clone.querySelectorAll('ul');
+      for(let i = 0; i < uls.length; i++) {
+        uls[i].style.listStyle = 'none';
+        uls[i].style.paddingLeft = '20px';
+        let lis = uls[i].querySelectorAll('li');
+        for( let j = 0; j < lis.length; j++) {
+         lis[j].style.paddingBottom = '3px';
+        }
+      }
+      html2canvas(clone).then(canvas => {
+        clone.remove();
+        const imgData = canvas.toDataURL('image/jpeg');
+        let doc = new jsPDF('p', 'mm', 'a4');
+        doc.addImage(imgData, 'JPEG', 0, 0,
+          doc.internal.pageSize.getWidth(),
+          doc.internal.pageSize.getHeight());
+        doc.save('FranciscoCarmonaCV.pdf');
+      });
+    }
+  },
   data: () => {
     return {
       skills: {
-        frontend: ['Angular', 'Vue', 'Ionic', 'Redux', 'Jasmine', 'Karma', 'Jest', 'Gulp', 'Sass'],
+        frontend: ['Angular', 'Vue', 'Ionic', 'Typescript', 'Redux', 'Jasmine', 'Karma', 'Jest', 'Gulp', 'Npm', 'Webpack', 'Sass'],
         backend: ['Laravel', 'Codeigniter', 'FuelPHP', 'Slim', 'Lumen', 'Node', 'Mongo', 'Cassandra', 'SQL'],
         devops: ['Docker', 'Rancher', 'Openshift', 'Jenkins', 'SonarQube', 'Git', 'Gitlab', 'AWS', 'Sentry']
       },
@@ -188,28 +229,39 @@ export default {
       background: color($colors, 'primary');
     }
     .leave {
+      position: relative;
       background: white;
-      max-width: $container-width;
+      max-width: 1253px;
       margin: 0 auto;
       box-shadow: rgba(0,0,0,.35) 0.4rem 0.7rem 9.3rem 0.3rem;
       padding: 1.5rem;
+      .btn-download {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        align-items:center;
+        i {
+          font-size: 1rem;
+        }
+      }
       header {
         box-shadow: none;
       }
       .title {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         color: color($colors, 'primary');
-        margin: 0 0 .5rem 0;
+        margin: 0 .5rem 0;
       }
       .subtitle {
         margin: 0 0 1rem 0;
-        font-size: 1.15rem;
+        font-size: 1rem;
         text-align: inherit;
         font-weight: bold;
         text-transform: uppercase;
       }
       main {
-        margin-top: 3rem;
+        margin-top: 1rem;
         section {
           p {
             margin: 0;
@@ -221,11 +273,11 @@ export default {
             margin: 0 0 .3rem 0;
             font-weight: bold;
             color: color($colors, 'primary');
-            font-size: 1.1rem;
+            font-size: .9rem;
           }
           &.sidebar {
             padding-right: 3rem;
-            section {
+            > section {
               padding-bottom: 2rem;
               &.personal-details {
                 section {
@@ -241,7 +293,6 @@ export default {
               &.contact {
                 .contact-item {
                   display: flex;
-                  padding-bottom: 1.3rem;
                   align-items:center;
                   img {
                     width: 23px;
@@ -249,6 +300,9 @@ export default {
                   a {
                     padding-left: 7px;
                   }
+                }
+                .contact-item:not(:last-child) {
+                  padding-bottom: 1.3rem;
                 }
               }
               &.skills {
@@ -261,23 +315,39 @@ export default {
                     margin: 0 0.5em 0.5em 0;
                   }
                 }
+                section:not(:last-child) {
+                  padding-bottom: 1.3rem;
+                }
               }
             }
           }
           &.body {
             section {
               padding-bottom: 2rem;
-              &.professional-experience, &.education {
-                /*h3:before {*/
-                  /*content: '\e836';*/
-                  /*font-family: 'Material Icons';*/
-                  /*font-size: .75rem;*/
-                  /*position: relative;*/
-                  /*margin-right: 10px;*/
-                /*}*/
-                span.date {
-                  float: right;
+              &.professional-experience {
+                .job {
+                  position: relative;
+                  padding-left: 19px;
+                  .time-line {
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
+                    height: 100%;
+                    .time-line-bar {
+                      position: absolute;
+                      height:100%;
+                      top: 16px;
+                      background: #e0e0e0;
+                      width: 3px;
+                      left: calc(50% - 3px/2);
+                    }
+                    .time-line-icon {
+                      font-size: .85rem;
+                    }
+                  }
                 }
+              }
+              &.professional-experience, &.education {
                 h4 {
                   margin: 0;
                   display: inline-block;
@@ -304,6 +374,21 @@ export default {
       .leave {
         margin: 3rem auto;
         padding: 5rem 4rem;
+        .title {
+          font-size: 2.5rem;
+          margin: 0 0 .5rem 0;
+        }
+        .subtitle {
+          font-size: 1.15rem;
+        }
+        .main {
+          margin-top: 3rem;
+          span {
+            .date {
+              float: right;
+            }
+          }
+        }
       }
     }
   }
