@@ -29,7 +29,7 @@
         </a>
       </div>
       <div class="col-sm-4 col-md-2 col-md-push-3 text-center">
-        <a target="_blank" title="Twitter - Francisco Carmona" href="">
+        <a target="_blank" title="Twitter - Francisco Carmona" href="https://twitter.com/frncar">
           <lazy-image src="img/brands/twitter.svg" alt="Twitter"></lazy-image>
         </a>
       </div>
