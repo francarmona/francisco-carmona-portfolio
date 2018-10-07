@@ -2,7 +2,7 @@
   <div id="cv">
     <div class="background"></div>
     <div class="leave">
-      <button v-on:click="generatePdf" class="btn btn-secondary btn-download hidden-sm">
+      <button v-on:click="window.open('https://cv.fcarmona.com', '_blank')" class="btn btn-secondary btn-download hidden-sm">
         <i class="material-icons">file_download</i>
         Download
       </button>
@@ -103,37 +103,11 @@
 </template>
 
 <script>
-import html2canvas from 'html2canvas';
-import { jsPDF } from 'jspdf';
 export default {
   name: 'Resume',
-  methods: {
-    generatePdf: () => {
-      const clone = document.querySelector('.leave').cloneNode(true);
-      clone.querySelector('.btn-download').remove();
-      document.querySelector('#cv').appendChild(clone);
-      let uls = clone.querySelectorAll('ul');
-      for(let i = 0; i < uls.length; i++) {
-        uls[i].style.listStyle = 'none';
-        uls[i].style.paddingLeft = '20px';
-        let lis = uls[i].querySelectorAll('li');
-        for( let j = 0; j < lis.length; j++) {
-         lis[j].style.paddingBottom = '3px';
-        }
-      }
-      html2canvas(clone).then(canvas => {
-        clone.remove();
-        const imgData = canvas.toDataURL('image/jpeg');
-        let doc = new jsPDF('p', 'mm', 'a4');
-        doc.addImage(imgData, 'JPEG', 0, 0,
-          doc.internal.pageSize.getWidth(),
-          doc.internal.pageSize.getHeight());
-        doc.save('FranciscoCarmonaCV.pdf');
-      });
-    }
-  },
   data: () => {
     return {
+      window: window,
       skills: {
         frontend: ['Angular', 'Vue', 'Ionic', 'Typescript', 'Redux', 'Jasmine', 'Karma', 'Jest', 'Gulp', 'Npm', 'Webpack', 'Sass'],
         backend: ['Laravel', 'Codeigniter', 'FuelPHP', 'Slim', 'Lumen', 'Node', 'Mongo', 'Cassandra', 'SQL'],
