@@ -50,8 +50,6 @@
   },
   "dependencies": {
     "gulp-util": "^3.0.8",
-    "html2canvas": "^1.0.0-alpha.12",
-    "jspdf": "^1.4.1",
     "lodash.merge": "^4.6.1",
     "material-design-icons-iconfont": "^3.0.3",
     "vue": "^2.5.16",
