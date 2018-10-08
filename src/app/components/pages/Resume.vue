@@ -2,7 +2,7 @@
   <div id="cv">
     <div class="background"></div>
     <div class="leave">
-      <button v-on:click="window.open('https://cv.fcarmona.com', '_blank')" class="btn btn-secondary btn-download hidden-sm">
+      <button v-on:click="window.open('https://cv.fcarmona.com', '_blank')" class="btn btn-secondary btn-download">
         <i class="material-icons">file_download</i>
         Download
       </button>
@@ -88,8 +88,8 @@
             <h2>Education</h2>
             <article v-for="ed in education">
               <h3>{{ ed.degree }}</h3>
-              <p v-if="ed.description">{{ ed.description }}</p>
               <h4>{{ ed.university }}</h4>
+              <p v-if="ed.description">{{ ed.description }}</p>
             </article>
           </section>
           <section class="references">
@@ -221,11 +221,12 @@ export default {
       }
       header {
         box-shadow: none;
+        margin-top: 45px;
       }
       .title {
         font-size: 1.5rem;
         color: color($colors, 'primary');
-        margin: 0 .5rem 0;
+        margin: 0;
       }
       .subtitle {
         margin: 0 0 1rem 0;
@@ -348,12 +349,15 @@ export default {
       .leave {
         margin: 3rem auto;
         padding: 5rem 4rem;
-        .title {
-          font-size: 2.5rem;
-          margin: 0 0 .5rem 0;
-        }
-        .subtitle {
-          font-size: 1.15rem;
+        header {
+          margin-top: 0;
+          .title {
+            font-size: 2.5rem;
+            margin: 0 0 .5rem 0;
+          }
+          .subtitle {
+            font-size: 1.15rem;
+          }
         }
         .main {
           margin-top: 3rem;
